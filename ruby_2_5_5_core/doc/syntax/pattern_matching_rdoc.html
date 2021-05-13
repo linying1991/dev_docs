@@ -1,0 +1,1112 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <!-- RD version: 0.44.2  -->
+    <!--  filepage  -->
+  <meta charset="utf-8">
+    <!--  no EOL indicator  -->
+          
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <!-- meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" -->
+
+
+	<title>File: pattern_matching.rdoc [Ruby 2.5.5]</title>
+  <link rel="stylesheet" href="../../css/associated.css" type="text/css" >
+  <link rel="stylesheet" href="../../css/inuit.css" >
+  <link rel="stylesheet" href="../../css/grid.inuit.css" >
+  <link rel="stylesheet" href="../../css/2011.css" type="text/css" >
+  <link rel="stylesheet" href="../../css/rdoc.css" type="text/css" >
+    <link rel="stylesheet" href="../../css/carbon17.css" type="text/css" >
+
+  <!-- rel_prefix  = '../..' -->
+    
+  <!-- rel_prefix = '../..'   asset_rel_prefix = '../..'  --> 
+  <link rel="stylesheet" href="css/extra.css" type="text/css" >
+  <script  src="/js/extra.js"  ></script>
+
+
+</head>
+
+<body class="file">
+<div id='actionbar' >
+<div class='wrapper'>
+<ul class='grids g0'></ul></div>
+
+
+
+</div> <!-- end action bar -->
+<!-- VERSION HEADER for 2.5.5 NOT FOUND -->          <div class='wrapper'>
+<!-- carbon17 added here 2017-09-09 -->
+ 
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <header>
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+        </h3>
+      </div>
+      </header>
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../_lib/racc/rdoc/grammar_en_rdoc.html">grammar.en.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../_test/rdoc/test_ja_rdoc.html">test.ja.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../COPYING_ja.html">COPYING.ja</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../README_EXT.html">README.EXT</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../README_EXT_ja.html">README.EXT.ja</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../configure_ac.html">configure.ac</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/bug_triaging_rdoc.html">bug_triaging.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/contributing_rdoc.html">contributing.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/contributors_rdoc.html">contributors.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/dtrace_probes_rdoc.html">dtrace_probes.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/extension_ja_rdoc.html">extension.ja.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/extension_rdoc.html">extension.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/globals_rdoc.html">globals.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/keywords_rdoc.html">keywords.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/maintainers_rdoc.html">maintainers.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/marshal_rdoc.html">marshal.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/regexp_rdoc.html">regexp.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/security_rdoc.html">security.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/signals_rdoc.html">signals.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/standard_library_rdoc.html">standard_library.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/syntax_rdoc.html">syntax.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/syntax/assignment_rdoc.html">assignment.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/syntax/calling_methods_rdoc.html">calling_methods.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/syntax/comments_rdoc.html">comments.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/syntax/control_expressions_rdoc.html">control_expressions.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/syntax/exceptions_rdoc.html">exceptions.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/syntax/literals_rdoc.html">literals.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/syntax/methods_rdoc.html">methods.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/syntax/miscellaneous_rdoc.html">miscellaneous.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/syntax/modules_and_classes_rdoc.html">modules_and_classes.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/syntax/pattern_matching_rdoc.html">pattern_matching.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/syntax/precedence_rdoc.html">precedence.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../doc/syntax/refinements_rdoc.html">refinements.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../lex_c_blt.html">lex.c.blt</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../sample/drb/README_ja_rdoc.html">README.ja.rdoc</a></li>
+				
+        <!-- local_rel_prefix -->
+					<li class="file"><a href="../../sample/drb/README_rdoc.html">README.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" ></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value="" class="quicksearch-field" >
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../ARGF.html">ARGF</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../ArgumentError.html">ArgumentError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Array.html">Array</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../BasicObject.html">BasicObject</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Binding.html">Binding</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Class.html">Class</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../ClosedQueueError.html">ClosedQueueError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Comparable.html">Comparable</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Complex.html">Complex</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../ConditionVariable.html">ConditionVariable</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Continuation.html">Continuation</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Data.html">Data</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Dir.html">Dir</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../ENV.html">ENV</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../EOFError.html">EOFError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Encoding.html">Encoding</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Encoding/CompatibilityError.html">Encoding::CompatibilityError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Encoding/Converter.html">Encoding::Converter</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Encoding/ConverterNotFoundError.html">Encoding::ConverterNotFoundError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Encoding/InvalidByteSequenceError.html">Encoding::InvalidByteSequenceError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Encoding/UndefinedConversionError.html">Encoding::UndefinedConversionError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../EncodingError.html">EncodingError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Enumerable.html">Enumerable</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Enumerator.html">Enumerator</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Enumerator/ArithmeticSequence.html">Enumerator::ArithmeticSequence</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Enumerator/Chain.html">Enumerator::Chain</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Enumerator/Generator.html">Enumerator::Generator</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Enumerator/Lazy.html">Enumerator::Lazy</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Enumerator/Producer.html">Enumerator::Producer</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Enumerator/Yielder.html">Enumerator::Yielder</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Errno.html">Errno</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Exception.html">Exception</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../FalseClass.html">FalseClass</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Fiber.html">Fiber</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../FiberError.html">FiberError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../File.html">File</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../File/Constants.html">File::Constants</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../File/Stat.html">File::Stat</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../FileTest.html">FileTest</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Float.html">Float</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../FloatDomainError.html">FloatDomainError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../FrozenError.html">FrozenError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../GC.html">GC</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../GC/Profiler.html">GC::Profiler</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Hash.html">Hash</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../IO.html">IO</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../IO/EAGAINWaitReadable.html">IO::EAGAINWaitReadable</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../IO/EAGAINWaitWritable.html">IO::EAGAINWaitWritable</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../IO/EINPROGRESSWaitReadable.html">IO::EINPROGRESSWaitReadable</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../IO/EINPROGRESSWaitWritable.html">IO::EINPROGRESSWaitWritable</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../IO/EWOULDBLOCKWaitReadable.html">IO::EWOULDBLOCKWaitReadable</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../IO/EWOULDBLOCKWaitWritable.html">IO::EWOULDBLOCKWaitWritable</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../IO/WaitReadable.html">IO::WaitReadable</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../IO/WaitWritable.html">IO::WaitWritable</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../IOError.html">IOError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../IndexError.html">IndexError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Integer.html">Integer</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Interrupt.html">Interrupt</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Kernel.html">Kernel</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../KeyError.html">KeyError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../LoadError.html">LoadError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../LocalJumpError.html">LocalJumpError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Marshal.html">Marshal</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../MatchData.html">MatchData</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Math.html">Math</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Math/DomainError.html">Math::DomainError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Method.html">Method</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Module.html">Module</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Mutex.html">Mutex</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../NameError.html">NameError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../NilClass.html">NilClass</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../NoMatchingPatternError.html">NoMatchingPatternError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../NoMemoryError.html">NoMemoryError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../NoMethodError.html">NoMethodError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../NotImplementedError.html">NotImplementedError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Numeric.html">Numeric</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Object.html">Object</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../ObjectSpace.html">ObjectSpace</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../ObjectSpace/WeakMap.html">ObjectSpace::WeakMap</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Pool.html">Pool</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Proc.html">Proc</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Process.html">Process</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Process/GID.html">Process::GID</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Process/Status.html">Process::Status</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Process/Sys.html">Process::Sys</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Process/UID.html">Process::UID</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Queue.html">Queue</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Random.html">Random</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Random/Formatter.html">Random::Formatter</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Range.html">Range</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../RangeError.html">RangeError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Rational.html">Rational</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Regexp.html">Regexp</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../RegexpError.html">RegexpError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Ripper.html">Ripper</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../RubyVM.html">RubyVM</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../RubyVM/AbstractSyntaxTree.html">RubyVM::AbstractSyntaxTree</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../RubyVM/AbstractSyntaxTree/Node.html">RubyVM::AbstractSyntaxTree::Node</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../RubyVM/InstructionSequence.html">RubyVM::InstructionSequence</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../RubyVM/MJIT.html">RubyVM::MJIT</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../RuntimeError.html">RuntimeError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../ScriptError.html">ScriptError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../SecurityError.html">SecurityError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Signal.html">Signal</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../SignalException.html">SignalException</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../SizedQueue.html">SizedQueue</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../StandardError.html">StandardError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../StopIteration.html">StopIteration</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../String.html">String</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Struct.html">Struct</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Symbol.html">Symbol</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../SyntaxError.html">SyntaxError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../SystemCallError.html">SystemCallError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../SystemExit.html">SystemExit</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../SystemStackError.html">SystemStackError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Thread.html">Thread</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Thread/Backtrace/Location.html">Thread::Backtrace::Location</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../ThreadError.html">ThreadError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../ThreadGroup.html">ThreadGroup</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Time.html">Time</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../TracePoint.html">TracePoint</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../TrueClass.html">TrueClass</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../TypeError.html">TypeError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../UnboundMethod.html">UnboundMethod</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../UncaughtThrowError.html">UncaughtThrowError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../UnicodeNormalize.html">UnicodeNormalize</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../Warning.html">Warning</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../ZeroDivisionError.html">ZeroDivisionError</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../fatal.html">fatal</a></li>
+				
+        <!--  local_rel_prefix -->
+					<li><a href="../../unknown.html">unknown</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+  <div class='adzbox'  id="azk83167">
+      
+  </div> 
+	<div id="documentation">
+		
+<h1 id="label-Pattern+matching">Pattern matching<span><a href="#label-Pattern+matching">&para;</a> <a href="#top">&uarr;</a></span></h1>
+
+<p>Pattern matching is an experimental feature allowing deep matching of
+structured values: checking the structure, and binding the matched parts to
+local variables.</p>
+
+<p>Pattern matching in Ruby is implemented with the <code>in</code> operator,
+which can be used in a standalone expression:</p>
+
+<pre>&lt;expression&gt; in &lt;pattern&gt;</pre>
+
+<p>or within the <code>case</code> statement:</p>
+
+<pre>case &lt;expression&gt;
+in &lt;pattern1&gt;
+  ...
+in &lt;pattern2&gt;
+  ...
+in &lt;pattern3&gt;
+  ...
+else
+  ...
+end</pre>
+
+<p>(Note that <code>in</code> and <code>when</code> branches can
+<strong>not</strong> be mixed in one <code>case</code> statement.)</p>
+
+<p>Pattern matching is <em>exhaustive</em>: if variable doesn’t match pattern
+(in a separate <code>in</code> statement), or doesn’t matches any branch of
+<code>case</code> statement (and <code>else</code> branch is absent),
+<code>NoMatchingPatternError</code> is raised.</p>
+
+<p>Therefore, standalone <code>in</code> statement is most useful when
+expected data structure is known beforehand, to unpack parts of it:</p>
+
+<pre>def connect_to_db(config) # imagine config is a huge configuration hash from YAML
+  # this statement will either unpack parts of the config into local variables,
+  # or raise if config's structure is unexpected
+  config in {connections: {db: {user:, password:}}, logging: {level: log_level}}
+  p [user, passsword, log_level] # local variables now contain relevant parts of the config
+  # ...
+end</pre>
+
+<p>whilst <code>case</code> form can be used for matching and unpacking
+simultaneously:</p>
+
+<pre>case config
+in String
+  JSON.parse(config)                    # ...and then probably try to match it again
+
+in version: '1', db:
+  # hash with {version: '1'} is expected to have db: key
+  puts &quot;database configuration: #{db}&quot;
+
+in version: '2', connections: {database:}
+  # hash with {version: '2'} is expected to have nested connection: database: structure
+  puts &quot;database configuration: #{database}&quot;
+
+in String =&gt; user, String =&gt; password
+  # sometimes connection is passed as just a pair of (user, password)
+  puts &quot;database configuration: #{user}:#{password}&quot;
+
+in Hash | Array
+  raise &quot;Malformed config structure: #{config}&quot;
+else
+  raise &quot;Unrecognized config type: #{config.class}&quot;
+end</pre>
+
+<p>See below for more examples and explanations of the syntax.</p>
+
+<h2 id="label-Patterns">Patterns<span><a href="#label-Patterns">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Patterns can be:</p>
+<ul><li>
+<p>any Ruby object (matched by <code>===</code> operator, like in
+<code>when</code>);</p>
+</li><li>
+<p>array pattern: <code>[&lt;subpattern&gt;, &lt;subpattern&gt;,
+&lt;subpattern&gt;, ...]</code>;</p>
+</li><li>
+<p>hash pattern: <code>{key: &lt;subpattern&gt;, key: &lt;subpattern&gt;,
+...}</code>;</p>
+</li><li>
+<p>special match-anything pattern: <code>_</code>;</p>
+</li><li>
+<p>combination of patterns with <code>|</code>.</p>
+</li></ul>
+
+<p>Any pattern can be nested inside array/hash patterns where
+<code>&lt;subpattern&gt;</code> is specified.</p>
+
+<p><a href="../../Array.html">Array</a> patterns match arrays, or objects that
+respond to <code>deconstruct</code> (see below about the latter). <a
+href="../../Hash.html">Hash</a> patterns match hashes, or objects that
+respond to <code>deconstruct_keys</code> (see below about the latter). Note
+that only symbol keys are supported for hash patterns, at least for now.</p>
+
+<p>An important difference between array and hash patterns behavior is arrays
+match only a <em>whole</em> array</p>
+
+<pre>case [1, 2, 3]
+in [Integer, Integer]
+  &quot;matched&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;not matched&quot;</pre>
+
+<p>while the hash matches even if there are other keys besides specified part:</p>
+
+<pre>case {a: 1, b: 2, c: 3}
+in {a: Integer}
+  &quot;matched&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;matched&quot;</pre>
+
+<p>There is also a way to specify there should be no other keys in the matched
+hash except those explicitly specified by pattern, with <code>**nil</code>:</p>
+
+<pre>case {a: 1, b: 2}
+in {a: Integer, **nil} # this will not match the pattern having keys other than a:
+  &quot;matched a part&quot;
+in {a: Integer, b: Integer, **nil}
+  &quot;matched a whole&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;matched a whole&quot;</pre>
+
+<p>Both array and hash patterns support “rest” specification:</p>
+
+<pre>case [1, 2, 3]
+in [Integer, *]
+  &quot;matched&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;matched&quot;
+
+case {a: 1, b: 2, c: 3}
+in {a: Integer, **}
+  &quot;matched&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;matched&quot;</pre>
+
+<p>In <code>case</code> (but not in standalone <code>in</code>) statement,
+parentheses around both kinds of patterns could be omitted</p>
+
+<pre>case [1, 2]
+in Integer, Integer
+  &quot;matched&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;matched&quot;
+
+case {a: 1, b: 2, c: 3}
+in a: Integer
+  &quot;matched&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;matched&quot;</pre>
+
+<h2 id="label-Variable+binding">Variable binding<span><a href="#label-Variable+binding">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Besides deep structural checks, one of the very important features of the
+pattern matching is the binding of the matched parts to local variables.
+The basic form of binding is just specifying <code>=&gt;
+variable_name</code> after the matched (sub)pattern (one might find this
+similar to storing exceptions in local variables in <code>rescue
+ExceptionClass =&gt; var</code> clause):</p>
+
+<pre>case [1, 2]
+in Integer =&gt; a, Integer
+  &quot;matched: #{a}&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;matched: 1&quot;
+
+case {a: 1, b: 2, c: 3}
+in a: Integer =&gt; m
+  &quot;matched: #{m}&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;matched: 1&quot;</pre>
+
+<p>If no additional check is required, only binding some part of the data to a
+variable, a simpler form could be used:</p>
+
+<pre>case [1, 2]
+in a, Integer
+  &quot;matched: #{a}&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;matched: 1&quot;
+
+case {a: 1, b: 2, c: 3}
+in a: m
+  &quot;matched: #{m}&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;matched: 1&quot;</pre>
+
+<p>For hash patterns, even a simpler form exists: key-only specification
+(without any value) binds the local variable with the key’s name, too:</p>
+
+<pre>case {a: 1, b: 2, c: 3}
+in a:
+  &quot;matched: #{a}&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;matched: 1&quot;</pre>
+
+<p><a href="../../Binding.html">Binding</a> works for nested patterns as well:</p>
+
+<pre>case {name: 'John', friends: [{name: 'Jane'}, {name: 'Rajesh'}]}
+in name:, friends: [{name: first_friend}, *]
+  &quot;matched: #{first_friend}&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;matched: Jane&quot;</pre>
+
+<p>The “rest” part of a pattern also can be bound to a variable:</p>
+
+<pre>case [1, 2, 3]
+in a, *rest
+  &quot;matched: #{a}, #{rest}&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;matched: 1, [2, 3]&quot;
+
+case {a: 1, b: 2, c: 3}
+in a:, **rest
+  &quot;matched: #{a}, #{rest}&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;matched: 1, {:b=&gt;2, :c=&gt;3}&quot;</pre>
+
+<p><a href="../../Binding.html">Binding</a> to variables currently does NOT
+work for alternative patterns joined with <code>|</code>:</p>
+
+<pre>case {a: 1, b: 2}
+in {a: } | Array
+  &quot;matched: #{a}&quot;
+else
+  &quot;not matched&quot;
+end
+# SyntaxError (illegal variable in alternative pattern (a))</pre>
+
+<p>The match-anything pattern <code>_</code> is the only exclusion from this
+rule: it still binds the first match to local variable <code>_</code>, but
+allowed to be used in alternative patterns:</p>
+
+<pre>case {a: 1, b: 2}
+in {a: _} | Array
+  &quot;matched: #{_}&quot;
+else
+  &quot;not matched&quot;
+end
+# =&gt; &quot;matched: 1&quot;</pre>
+
+<p>It is, though, not advised to reuse bound value, as <code>_</code>
+pattern’s goal is to signify discarded value.</p>
+
+<h2 id="label-Variable+pinning">Variable pinning<span><a href="#label-Variable+pinning">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Due to variable binding feature, existing local variable can’t be
+straightforwardly used as a sub-pattern:</p>
+
+<pre>expectation = 18
+
+case [1, 2]
+in expectation, *rest
+  &quot;matched. expectation was: #{expectation}&quot;
+else
+  &quot;not matched. expectation was: #{expectation}&quot;
+end
+# expected: &quot;not matched. expectation was: 18&quot;
+# real: &quot;matched. expectation was: 1&quot; -- local variable just rewritten</pre>
+
+<p>For this case, “variable pinning” operator <code>^</code> can be used, to
+tell Ruby “just use this value as a part of pattern”</p>
+
+<pre>expectation = 18
+case [1, 2]
+in ^expectation, *rest
+  &quot;matched. expectation was: #{expectation}&quot;
+else
+  &quot;not matched. expectation was: #{expectation}&quot;
+end
+#=&gt; &quot;not matched. expectation was: 18&quot;</pre>
+
+<p>One important usage of variable pinning is specifying the same value should
+happen in the pattern several times:</p>
+
+<pre>jane = {school: 'high', schools: [{id: 1, level: 'middle'}, {id: 2, level: 'high'}]}
+john = {school: 'high', schools: [{id: 1, level: 'middle'}]}
+
+case jane
+in school:, schools: [*, {id:, level: ^school}] # select the last school, level should match
+  &quot;matched. school: #{id}&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;matched. school: 2&quot;
+
+case john # the specified school level is &quot;high&quot;, but last school does not match
+in school:, schools: [*, {id:, level: ^school}]
+  &quot;matched. school: #{id}&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;not matched&quot;</pre>
+
+<h2 id="label-Matching+non-primitive+objects-3A+deconstruct_keys+and+deconstruct">Matching non-primitive objects: <code>deconstruct_keys</code> and <code>deconstruct</code><span><a href="#label-Matching+non-primitive+objects-3A+deconstruct_keys+and+deconstruct">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>As already mentioned above, hash and array patterns besides literal arrays
+and hashes will try to match any object implementing
+<code>deconstruct</code> (for array patterns) or
+<code>deconstruct_keys</code> (for hash patterns).</p>
+
+<pre>class Point
+  def initialize(x, y)
+    @x, @y = x, y
+  end
+
+  def deconstruct
+    puts &quot;deconstruct called&quot;
+    [@x, @y]
+  end
+
+  def deconstruct_keys(keys)
+    puts &quot;deconstruct_keys called with #{keys.inspect}&quot;
+    {x: @x, y: @y}
+  end
+end
+
+case Point.new(1, -2)
+in px, Integer  # subpatterns and variable binding works
+  &quot;matched: #{px}&quot;
+else
+  &quot;not matched&quot;
+end
+# prints &quot;deconstruct called&quot;
+&quot;matched: 1&quot;
+
+case Point.new(1, -2)
+in x: 0.. =&gt; px
+  &quot;matched: #{px}&quot;
+else
+  &quot;not matched&quot;
+end
+# prints: deconstruct_keys called with [:x]
+#=&gt; &quot;matched: 1&quot;</pre>
+
+<p><code>keys</code> are passed to <code>deconstruct_keys</code> to provide a
+room for optimization in the matched class: if calculating a full hash
+representation is expensive, one may calculate only the necessary subhash.
+When the <code>**rest</code> pattern is used, <code>nil</code> is passed as
+a <code>keys</code> value:</p>
+
+<pre>case Point.new(1, -2)
+in x: 0.. =&gt; px, **rest
+  &quot;matched: #{px}&quot;
+else
+  &quot;not matched&quot;
+end
+# prints: deconstruct_keys called with nil
+#=&gt; &quot;matched: 1&quot;</pre>
+
+<p>Additionally, when matching custom classes, expected class could be
+specified as a part of the pattern and is checked with <code>===</code></p>
+
+<pre>class SuperPoint &lt; Point
+end
+
+case Point.new(1, -2)
+in SuperPoint(x: 0.. =&gt; px)
+  &quot;matched: #{px}&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;not matched&quot;
+
+case SuperPoint.new(1, -2)
+in SuperPoint[x: 0.. =&gt; px] # [] or () parentheses are allowed
+  &quot;matched: #{px}&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;matched: 1&quot;</pre>
+
+<h2 id="label-Guard+clauses">Guard clauses<span><a href="#label-Guard+clauses">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p><code>if</code> can be used to attach an additional condition (guard
+clause) when the pattern matches. This condition may use bound variables:</p>
+
+<pre>case [1, 2]
+in a, b if b == a*2
+  &quot;matched&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;matched&quot;
+
+case [1, 1]
+in a, b if b == a*2
+  &quot;matched&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;not matched&quot;</pre>
+
+<p><code>unless</code> works, too:</p>
+
+<pre>case [1, 1]
+in a, b unless b == a*2
+  &quot;matched&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;matched&quot;</pre>
+
+<h2 id="label-Current+feature+status">Current feature status<span><a href="#label-Current+feature+status">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>As of Ruby 2.7, feature is considered <em>experimental</em>: its syntax can
+change in the future, and the performance is not optimized yet. Every time
+you use pattern matching in code, the warning will be printed:</p>
+
+<pre>{a: 1, b: 2} in {a:}
+# warning: Pattern matching is experimental, and the behavior may change in future versions of Ruby!</pre>
+
+<p>To suppress this warning, one may use newly introduced <a
+href="../../Warning.html#method-c-5B-5D-3D">Warning.[]=</a> method:</p>
+
+<pre class="ruby"><span class="ruby-constant">Warning</span>[:<span class="ruby-identifier">experimental</span>] = <span class="ruby-keyword">false</span>
+<span class="ruby-identifier">eval</span>(<span class="ruby-string">'{a: 1, b: 2} in {a:}'</span>)
+<span class="ruby-comment"># ...no warning printed...</span>
+</pre>
+
+<p>Note that pattern-matching warning is raised at a compile time, so this
+will not suppress warning:</p>
+
+<pre>Warning[:experimental] = false # At the time this line is evaluated, the parsing happened and warning emitted
+{a: 1, b: 2} in {a:}</pre>
+
+<p>So, only subsequently loaded files or `eval`-ed code is affected by
+switching the flag.</p>
+
+<p>Alternatively, command-line key <code>-W:no-experimental</code> can be used
+to turn off “experimental” feature warnings.</p>
+
+<p>One of the things developer should be aware of, which probably to be fixed
+in the upcoming versions, is that pattern matching statement rewrites
+mentioned local variables on partial match, <em>even if the whole pattern
+is not matched</em>.</p>
+
+<pre>a = 5
+case [1, 2]
+in String =&gt; a, String
+  &quot;matched&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;not matched&quot;
+a
+#=&gt; 5  -- even partial match not happened, a is not rewritten
+
+case [1, 2]
+in a, String
+  &quot;matched&quot;
+else
+  &quot;not matched&quot;
+end
+#=&gt; &quot;not matched&quot;
+a
+#=&gt; 1  -- the whole pattern not matched, but partial match happened, a is rewritten</pre>
+
+<p>Currently, the only core class implementing <code>deconstruct</code> and
+<code>deconstruct_keys</code> is <a href="../../Struct.html">Struct</a>.</p>
+
+<pre>Point = Struct.new(:x, :y)
+Point[1, 2] in [a, b]
+# successful match
+Point[1, 2] in {x:, y:}
+# successful match</pre>
+
+	</div>
+
+
+                <div id="footer">
+                
+                <p><a href="http://ruby-doc.org">Ruby-doc.org</a> is a service of <a href="http://jamesbritt.com">James Britt</a> and <a href="http://neurogami.com">Neurogami</a>, purveyors of fine dance noise.  <div class='oio-inline'><ins data-revive-zoneid="1" data-revive-id="58924a5717c091dfee6dda3f7d38c4d7"></ins><script async src="//ras.ruby-doc.org/vvv/delivery/thesinkjs.php"></script></div></p>
+
+                
+                <p id="validator-badges"><small>Generated with Rubydoc Rdoc Generator 0.44.2</small>.</p>
+              </div>
+
+
+    
+
+</body>
+
+</html>
+

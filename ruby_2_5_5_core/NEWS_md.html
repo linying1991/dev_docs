@@ -1,0 +1,286 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <!-- RD version: 0.44.2  -->
+    <!--  filepage  -->
+  <meta charset="utf-8">
+    <!--  no EOL indicator  -->
+          
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <!-- meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" -->
+
+
+	<title>File: NEWS.md [Ruby 2.5.5]</title>
+  <link rel="stylesheet" href="./css/associated.css" type="text/css" >
+  <link rel="stylesheet" href="./css/inuit.css" >
+  <link rel="stylesheet" href="./css/grid.inuit.css" >
+  <link rel="stylesheet" href="./css/2011.css" type="text/css" >
+  <link rel="stylesheet" href="./css/rdoc.css" type="text/css" >
+    <link rel="stylesheet" href="./css/carbon17.css" type="text/css" >
+
+  <!-- rel_prefix  = '' -->
+    
+    <!-- WHY? -->
+    
+    
+  <!-- rel_prefix = '.'   asset_rel_prefix = '.'  --> 
+  <link rel="stylesheet" href="css/extra.css" type="text/css" >
+  <script  src="/js/extra.js"  ></script>
+
+
+</head>
+
+<body class="file file-popup">
+	<div id="metadata">
+		<dl>
+			<dt class="modified-date">Last Modified</dt>
+			<dd class="modified-date">2020-03-16 20:29:58 -0500</dd>
+
+			
+			<dt class="requires">Requires</dt>
+			<dd class="requires">
+				<ul>
+				
+				</ul>
+			</dd>
+			
+
+			
+		</dl>
+	</div>
+
+	<div id="documentation">
+		
+		<div class="description">
+			<h2>Description</h2>
+			
+<h1 id="label-NEWS+for+Ruby+2.8.0+-28tentative-3B+to+be+3.0.0-29"><a href="NEWS_md.html">NEWS</a> for Ruby 2.8.0 (tentative; to be 3.0.0)<span><a href="#label-NEWS+for+Ruby+2.8.0+-28tentative-3B+to+be+3.0.0-29">&para;</a> <a href="#top">&uarr;</a></span></h1>
+
+<p>This document is a list of user visible feature changes since the
+<strong>2.7.0</strong> release, except for bug fixes.</p>
+
+<p>Note that each entry is kept so brief that no reason behind or reference
+information is supplied with. For a full list of changes with all
+sufficient information, see the ChangeLog file or Redmine (e.g.
+<code>https://bugs.ruby-lang.org/issues/$FEATURE_OR_BUG_NUMBER</code>).</p>
+
+<h2 id="label-Language+changes">Language changes<span><a href="#label-Language+changes">&para;</a> <a href="#top">&uarr;</a></span></h2>
+<ul><li>
+<p>Keyword arguments are now separated from positional arguments.  Code that
+resulted in deprecation warnings in Ruby 2.7 will now  result in <a
+href="ArgumentError.html">ArgumentError</a> or different behavior. [<a
+href="https://bugs.ruby-lang.org/issues/14183">Feature #14183</a>]</p>
+</li><li>
+<p>Procs accepting a single rest argument and keywords are no longer  subject
+to autosplatting. This now matches the behavior of Procs  accepting a
+single rest argument and no keywords.  [<a
+href="https://bugs.ruby-lang.org/issues/16166">Feature #16166</a>]</p>
+
+<pre class="ruby"><span class="ruby-identifier">pr</span> = <span class="ruby-identifier">proc</span>{<span class="ruby-operator">|</span><span class="ruby-operator">*</span><span class="ruby-identifier">a</span>, <span class="ruby-operator">**</span><span class="ruby-identifier">kw</span><span class="ruby-operator">|</span> [<span class="ruby-identifier">a</span>, <span class="ruby-identifier">kw</span>]}
+
+<span class="ruby-identifier">pr</span>.<span class="ruby-identifier">call</span>([<span class="ruby-value">1</span>])
+<span class="ruby-comment"># 2.7 =&gt; [[1], {}]</span>
+<span class="ruby-comment"># 3.0 =&gt; [[[1]], {}]</span>
+
+<span class="ruby-identifier">pr</span>.<span class="ruby-identifier">call</span>([<span class="ruby-value">1</span>, {<span class="ruby-identifier">a</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>}])
+<span class="ruby-comment"># 2.7 =&gt; [[1], {:a=&gt;1}] # and deprecation warning</span>
+<span class="ruby-comment"># 3.0 =&gt; [[[1, {:a=&gt;1}]], {}]</span>
+</pre>
+</li><li>
+<p>$SAFE is now a normal global variable with no special behavior.  [<a
+href="https://bugs.ruby-lang.org/issues/16131">Feature #16131</a>]</p>
+</li><li>
+<p>yield in singleton class definitions in methods is now a <a
+href="SyntaxError.html">SyntaxError</a>  instead of a warning. yield in a
+class definition outside of a method  is now a <a
+href="SyntaxError.html">SyntaxError</a> instead of a <a
+href="LocalJumpError.html">LocalJumpError</a>. [<a
+href="https://bugs.ruby-lang.org/issues/15575">Feature #15575</a>]</p>
+</li></ul>
+
+<h2 id="label-Command+line+options">Command line options<span><a href="#label-Command+line+options">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<h2 id="label-Core+classes+updates">Core classes updates<span><a href="#label-Core+classes+updates">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Outstanding ones only.</p>
+<ul><li>
+<p><a href="Dir.html">Dir</a></p>
+<ul><li>
+<p>Modified method</p>
+<ul><li>
+<p><a href="Dir.html#method-c-glob">Dir.glob</a> and <a
+href="Dir.html#method-c-5B-5D">Dir.[]</a> now sort the results by default,
+and  accept <code>sort:</code> keyword option. [<a
+href="https://bugs.ruby-lang.org/issues/8709">Feature #8709</a>]</p>
+</li></ul>
+</li></ul>
+</li><li>
+<p><a href="Hash.html">Hash</a></p>
+<ul><li>
+<p>Modified method</p>
+<ul><li>
+<p><a href="Hash.html#method-i-transform_keys">Hash#transform_keys</a> now
+accepts a hash that maps keys to new  keys. [<a
+href="https://bugs.ruby-lang.org/issues/16274">Feature #16274</a>]</p>
+</li></ul>
+</li></ul>
+</li><li>
+<p><a href="Kernel.html">Kernel</a></p>
+<ul><li>
+<p>Modified method</p>
+<ul><li>
+<p>Kernel#clone when called with <code>freeze: false</code> keyword will call 
+initialize_clone with the <code>freeze: false</code> keyword.  [<a
+href="https://bugs.ruby-lang.org/issues/14266">Bug #14266</a>]</p>
+</li><li>
+<p><a href="Kernel.html#method-i-eval">Kernel#eval</a> when called with two
+arguments will use "(eval)"  for <code>__FILE__</code> and 1 for
+<code>__LINE__</code> in the evaluated code.  [<a
+href="https://bugs.ruby-lang.org/issues/4352">Bug #4352</a>]</p>
+</li></ul>
+</li></ul>
+</li><li>
+<p><a href="Module.html">Module</a></p>
+<ul><li>
+<p>Modified method</p>
+<ul><li>
+<p><a href="Module.html#method-i-include">Module#include</a> now includes the
+arguments in modules and  classes that have already included or prepended
+the receiver,  mirroring the behavior if the arguments were included in the
+receiver before the other modules and classes included or  prepended the
+receiver. [<a href="https://bugs.ruby-lang.org/issues/9573">Feature
+#9573</a>]</p>
+</li></ul>
+</li></ul>
+</li><li>
+<p><a href="Symbol.html">Symbol</a></p>
+<ul><li>
+<p>Modified method</p>
+<ul><li>
+<p><a href="Symbol.html#method-i-to_proc">Symbol#to_proc</a> now returns a
+lambda <a href="Proc.html">Proc</a>.  [<a
+href="https://bugs.ruby-lang.org/issues/16260">Feature #16260</a>]</p>
+</li></ul>
+</li></ul>
+</li></ul>
+
+<h2 id="label-Stdlib+updates">Stdlib updates<span><a href="#label-Stdlib+updates">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Outstanding ones only.</p>
+<ul><li>
+<p>Net::HTTP</p>
+<ul><li>
+<p>New method</p>
+<ul><li>
+<p>Add Net::HTTP#verify_hostname= and Net::HTTP#verify_hostname  to skip
+hostname verification. [<a
+href="https://bugs.ruby-lang.org/issues/16555">Feature #16555</a>]</p>
+</li></ul>
+</li><li>
+<p>Modified method</p>
+<ul><li>
+<p>Net::HTTP.get, Net::HTTP.get_response, and Net::HTTP.get_print can  take
+request headers as a <a href="Hash.html">Hash</a> in the second argument
+when the first  argument is a URI.</p>
+</li></ul>
+</li></ul>
+</li></ul>
+
+<h2 id="label-Compatibility+issues">Compatibility issues<span><a href="#label-Compatibility+issues">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Excluding feature bug fixes.</p>
+<ul><li>
+<p><a href="Regexp.html">Regexp</a> literals are frozen [<a
+href="https://bugs.ruby-lang.org/issues/8948">Feature #8948</a>] [<a
+href="https://bugs.ruby-lang.org/issues/16377">Feature #16377</a>]</p>
+
+<pre class="ruby"><span class="ruby-regexp">/foo/</span>.<span class="ruby-identifier">frozen?</span> <span class="ruby-comment">#=&gt; true</span>
+</pre>
+</li><li>
+<p>Bundled gems</p>
+<ul><li>
+<p>net-telnet and xmlrpc have been removed from the bundled gems.  If you are
+interested in maintaining them, please comment on  your plan to <a
+href="https://github.com/ruby/xmlrpc">github.com/ruby/xmlrpc</a>  or <a
+href="https://github.com/ruby/net-telnet">github.com/ruby/net-telnet</a>.</p>
+</li></ul>
+</li><li>
+<p>EXPERIMENTAL: <a href="Hash.html#method-i-each">Hash#each</a> consistently
+yields a 2-element array [[Bug #12706]]</p>
+<ul><li>
+<p>Now <code>{ a: 1 }.each(&amp;-&gt;(k, v) { })</code> raises an <a
+href="ArgumentError.html">ArgumentError</a>  due to lambda's arity check.</p>
+</li><li>
+<p>This is experimental; if it brings a big incompatibility issue,  it may be
+reverted until 2.8/3.0 release.</p>
+</li></ul>
+</li></ul>
+
+<h2 id="label-Stdlib+compatibility+issues">Stdlib compatibility issues<span><a href="#label-Stdlib+compatibility+issues">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Excluding feature bug fixes.</p>
+
+<h2 id="label-C+API+updates">C API updates<span><a href="#label-C+API+updates">&para;</a> <a href="#top">&uarr;</a></span></h2>
+<ul><li>
+<p>C API functions related to $SAFE have been removed.  [<a
+href="https://bugs.ruby-lang.org/issues/16131">Feature #16131</a>]</p>
+</li></ul>
+
+<h2 id="label-Implementation+improvements">Implementation improvements<span><a href="#label-Implementation+improvements">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<h2 id="label-Miscellaneous+changes">Miscellaneous changes<span><a href="#label-Miscellaneous+changes">&para;</a> <a href="#top">&uarr;</a></span></h2>
+<ul><li>
+<p>Methods using <code>ruby2_keywords</code> will no longer keep empty keyword
+splats, those are now removed just as they are for methods not  using
+<code>ruby2_keywords</code>.</p>
+</li><li>
+<p>Taint deprecation warnings are now issued in regular mode in  addition to
+verbose warning mode. [<a
+href="https://bugs.ruby-lang.org/issues/16131">Feature #16131</a>]</p>
+</li></ul>
+
+		</div>
+		
+  </div>
+
+
+ <!-- JavaScript at the bottom for fast page loading -->
+
+            <script src="./js/libs/jquery-1.6.2.min.js"></script>
+
+	<script src="./js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/rubydoc.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/libs/modernizr-2.0.6.min.js"></script>
+
+
+  <script defer src="./js/plugins.js"></script>
+  <script defer src="./js/script.js"></script>
+  <!-- end scripts-->
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
+  <div id='tx_unknown_versioned' class='associated_wrapper'></div><script type='text/javascript'>$("#tx_unknown_versioned").load("/associated/2.5.5/unknown.ihtml");</script> <div id='tx_unknown' class='associated_wrapper'></div><script type='text/javascript'>$("#tx_unknown").load("/associated/unknown.ihtml");</script> 
+      
+
+</div>
+<div id="footer">
+  
+  <p><a href="http://ruby-doc.org">Ruby-doc.org</a> is a service of <a href="http://jamesbritt.com">James Britt</a> and <a href="http://neurogami.com">Neurogami</a>, an erratic source of art, music, and technology.  <div class='oio-inline'><ins data-revive-zoneid="1" data-revive-id="58924a5717c091dfee6dda3f7d38c4d7"></ins><script async src="//ras.ruby-doc.org/vvv/delivery/thesinkjs.php"></script></div></p>
+
+    <p><small>Generated with Rubydoc Rdoc Generator 0.44.2</small>.</p>
+  </div>
+    </body>
+
+
+</html>
+
