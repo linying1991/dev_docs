@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <!-- classpage -- >
+    <!-- RD version: 0.44.2  -->
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <meta name='description' content='  Class : OpenSSL::Timestamp::Factory  -   Ruby 2.5.2 ' />
+  <!--  no EOL indicator  -->
+  <meta content="2020-03-17 23:10:38 -0500" http-equiv="change-date" />
+  <!-- rel_prefix  = '../..'  ENV['RDOC_FOR_WEBSITE']   = true-->
+    
+  <!-- rel_prefix = '../..'   asset_rel_prefix = '../..'  --> 
+  <title>Class: OpenSSL::Timestamp::Factory (Ruby 2.5.2) </title>
+  <link rel="stylesheet" href="../../css/associated.css" type="text/css" >
+  <!-- link rel="stylesheet" href="../..css/obf.css"  -->
+  <link rel="stylesheet" href="../../css/inuit.css" >
+  <link rel="stylesheet" href="../../css/grid.inuit.css" >
+  <link rel="stylesheet" href="../../css/2011.css" type="text/css" >
+  <link rel="stylesheet" href="../../css/rdoc.css" type="text/css" >
+    <link rel="stylesheet" href="../../css/carbon17.css" type="text/css" >
+
+
+  <script src="../../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/rubydoc.js" type="text/javascript" charset="utf-8"></script> 
+
+
+   
+<script src="../../js/highlight.min.js"></script>
+<script> 
+  hljs.tabReplace = '  ';
+  hljs.initHighlightingOnLoad();
+  </script> 
+
+  <style type='text/css'>
+
+    #vulns-alert #vulns{
+      background-color: #c33 ! important;
+      width: 100%;
+      text-align: center;
+   }
+   
+   #vulns-alert #vulns a {
+    color: #F99 ! important;
+   }
+ </style>
+
+   <link rel="stylesheet" href="css/extra.css" type="text/css" >
+  <script  src="/js/extra.js"  ></script>
+
+
+</head>
+
+<body id="top" class="class rdocstar">
+
+<div id='actionbar' >
+<div class='wrapper'>
+  <ul class='grids g0'>
+	<li class='grid-2' ><a href='/' target='_top' >Home</a></li>
+	<li class='grid-2' ><a href='/core-2.5.2' target='_top' >Core 2.5.2</a></li>
+	<li class='grid-2' ><a href='/stdlib-2.5.2' target='_top' >Std-lib 2.5.2</a></li>
+
+   <li class='grid-2' ><a href='/downloads' target='_top' >Downloads</a></li>
+	 <li class='grid-5 right' id='rd-action-search'><form id="searchbox_011815814100681837392:wnccv6st5qk" action="https://ruby-doc.com/search.html"><input type="hidden" name="cx" value="011815814100681837392:wnccv6st5qk" ><input  id='rd-search-input' name="q" type="text" size="20" >&#160;&#160;<input type="submit" name="sa" value="Search" ><input type="hidden" name="cof" value="FORID:9" ></form></li>
+	</ul>
+</div>
+<span id='vulns-alert'></span>
+<!-- VERSION HEADER for 2.5.2 NOT FOUND -->
+</div> <!-- end action bar -->
+ <div class='wrapper'>
+  
+   <!-- carbon17 added here 2017-09-09 -->
+ 
+   <script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+<div class="bsa-cpc"></div>
+<script>
+  (function(){
+    if(typeof _bsa !== 'undefined' && _bsa) {
+    _bsa.init('default', 'CKYD627W', 'placement:rubydocorg', {
+      target: '.bsa-cpc',
+      align: 'horizontal',
+      disable_css: 'true'
+    });
+      }
+  })();
+</script>
+
+ 
+
+   <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+          
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul id='file-metadata'>
+
+          
+          
+          
+          <li class='in-file'>openssl/ossl_ts.c</li>      
+            
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link">Object</p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-i-create_timestamp">#create_timestamp</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+          
+          
+          
+          <li><a href="../../IO.html">IO</a></li>
+        
+          
+          
+          <li><a href="../../IO/WaitReadable.html">IO::WaitReadable</a></li>
+        
+          
+          
+          <li><a href="../../IO/WaitWritable.html">IO::WaitWritable</a></li>
+        
+          
+          
+          <li><a href="../../Integer.html">Integer</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL.html">OpenSSL</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/ASN1.html">OpenSSL::ASN1</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/ASN1/ASN1Data.html">OpenSSL::ASN1::ASN1Data</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/ASN1/ASN1Error.html">OpenSSL::ASN1::ASN1Error</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/ASN1/Constructive.html">OpenSSL::ASN1::Constructive</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/ASN1/ObjectId.html">OpenSSL::ASN1::ObjectId</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/ASN1/Primitive.html">OpenSSL::ASN1::Primitive</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/BN.html">OpenSSL::BN</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/BNError.html">OpenSSL::BNError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Buffering.html">OpenSSL::Buffering</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Buffering/Buffer.html">OpenSSL::Buffering::Buffer</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Cipher.html">OpenSSL::Cipher</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Cipher/Cipher.html">OpenSSL::Cipher::Cipher</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Cipher/CipherError.html">OpenSSL::Cipher::CipherError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Config.html">OpenSSL::Config</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/ConfigError.html">OpenSSL::ConfigError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Digest.html">OpenSSL::Digest</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Digest/DigestError.html">OpenSSL::Digest::DigestError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Engine.html">OpenSSL::Engine</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Engine/EngineError.html">OpenSSL::Engine::EngineError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/ExtConfig.html">OpenSSL::ExtConfig</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/HMAC.html">OpenSSL::HMAC</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/HMACError.html">OpenSSL::HMACError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/KDF.html">OpenSSL::KDF</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/KDF/KDFError.html">OpenSSL::KDF::KDFError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Netscape.html">OpenSSL::Netscape</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Netscape/SPKI.html">OpenSSL::Netscape::SPKI</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Netscape/SPKIError.html">OpenSSL::Netscape::SPKIError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/OCSP.html">OpenSSL::OCSP</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/OCSP/BasicResponse.html">OpenSSL::OCSP::BasicResponse</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/OCSP/CertificateId.html">OpenSSL::OCSP::CertificateId</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/OCSP/OCSPError.html">OpenSSL::OCSP::OCSPError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/OCSP/Request.html">OpenSSL::OCSP::Request</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/OCSP/Response.html">OpenSSL::OCSP::Response</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/OCSP/SingleResponse.html">OpenSSL::OCSP::SingleResponse</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/OpenSSLError.html">OpenSSL::OpenSSLError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKCS12.html">OpenSSL::PKCS12</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKCS12/PKCS12Error.html">OpenSSL::PKCS12::PKCS12Error</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKCS5.html">OpenSSL::PKCS5</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKCS7.html">OpenSSL::PKCS7</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKCS7/PKCS7Error.html">OpenSSL::PKCS7::PKCS7Error</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKCS7/RecipientInfo.html">OpenSSL::PKCS7::RecipientInfo</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKCS7/SignerInfo.html">OpenSSL::PKCS7::SignerInfo</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKey.html">OpenSSL::PKey</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKey/DH.html">OpenSSL::PKey::DH</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKey/DHError.html">OpenSSL::PKey::DHError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKey/DSA.html">OpenSSL::PKey::DSA</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKey/DSAError.html">OpenSSL::PKey::DSAError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKey/EC.html">OpenSSL::PKey::EC</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKey/EC/Group.html">OpenSSL::PKey::EC::Group</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKey/EC/Group/Error.html">OpenSSL::PKey::EC::Group::Error</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKey/EC/Point.html">OpenSSL::PKey::EC::Point</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKey/EC/Point/Error.html">OpenSSL::PKey::EC::Point::Error</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKey/ECError.html">OpenSSL::PKey::ECError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKey/PKey.html">OpenSSL::PKey::PKey</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKey/PKeyError.html">OpenSSL::PKey::PKeyError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKey/RSA.html">OpenSSL::PKey::RSA</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/PKey/RSAError.html">OpenSSL::PKey::RSAError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Random.html">OpenSSL::Random</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Random/RandomError.html">OpenSSL::Random::RandomError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/SSL.html">OpenSSL::SSL</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/SSL/SSLContext.html">OpenSSL::SSL::SSLContext</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/SSL/SSLError.html">OpenSSL::SSL::SSLError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/SSL/SSLErrorWaitReadable.html">OpenSSL::SSL::SSLErrorWaitReadable</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/SSL/SSLErrorWaitWritable.html">OpenSSL::SSL::SSLErrorWaitWritable</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/SSL/SSLServer.html">OpenSSL::SSL::SSLServer</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/SSL/SSLSocket.html">OpenSSL::SSL::SSLSocket</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/SSL/Session.html">OpenSSL::SSL::Session</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/SSL/Session/SessionError.html">OpenSSL::SSL::Session::SessionError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/SSL/SocketForwarder.html">OpenSSL::SSL::SocketForwarder</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Timestamp.html">OpenSSL::Timestamp</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Timestamp/Factory.html">OpenSSL::Timestamp::Factory</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Timestamp/Request.html">OpenSSL::Timestamp::Request</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Timestamp/Response.html">OpenSSL::Timestamp::Response</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Timestamp/TimestampError.html">OpenSSL::Timestamp::TimestampError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/Timestamp/TokenInfo.html">OpenSSL::Timestamp::TokenInfo</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509.html">OpenSSL::X509</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/Attribute.html">OpenSSL::X509::Attribute</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/AttributeError.html">OpenSSL::X509::AttributeError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/CRL.html">OpenSSL::X509::CRL</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/CRLError.html">OpenSSL::X509::CRLError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/Certificate.html">OpenSSL::X509::Certificate</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/CertificateError.html">OpenSSL::X509::CertificateError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/Extension.html">OpenSSL::X509::Extension</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/Extension/AuthorityInfoAccess.html">OpenSSL::X509::Extension::AuthorityInfoAccess</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/Extension/AuthorityKeyIdentifier.html">OpenSSL::X509::Extension::AuthorityKeyIdentifier</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/Extension/CRLDistributionPoints.html">OpenSSL::X509::Extension::CRLDistributionPoints</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/Extension/Helpers.html">OpenSSL::X509::Extension::Helpers</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/Extension/SubjectKeyIdentifier.html">OpenSSL::X509::Extension::SubjectKeyIdentifier</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/ExtensionError.html">OpenSSL::X509::ExtensionError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/ExtensionFactory.html">OpenSSL::X509::ExtensionFactory</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/Marshal.html">OpenSSL::X509::Marshal</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/Marshal/ClassMethods.html">OpenSSL::X509::Marshal::ClassMethods</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/Name.html">OpenSSL::X509::Name</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/Name/RFC2253DN.html">OpenSSL::X509::Name::RFC2253DN</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/NameError.html">OpenSSL::X509::NameError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/Request.html">OpenSSL::X509::Request</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/RequestError.html">OpenSSL::X509::RequestError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/Revoked.html">OpenSSL::X509::Revoked</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/RevokedError.html">OpenSSL::X509::RevokedError</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/Store.html">OpenSSL::X509::Store</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/StoreContext.html">OpenSSL::X509::StoreContext</a></li>
+        
+          
+          
+          <li><a href="../../OpenSSL/X509/StoreError.html">OpenSSL::X509::StoreError</a></li>
+        
+          
+          
+          <li><a href="../../unknown.html">unknown</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div> <!-- metadata -->
+  <div class='adzbox'  id="azk83167">
+    
+   <div id="carbonads-container"><div class="carbonad">
+<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYIKKQN&placement=rubydocorg" id="_carbonads_js"></script>
+  </div></div>
+
+   
+  </div> 
+  <div id="documentation">
+    <h1 class="class">OpenSSL::Timestamp::Factory</h1>
+
+    <div id="description" class="description">
+      
+<p>Used to generate a <a href="Response.html">Response</a> from scratch.</p>
+
+<p>Please bear in mind that the implementation will always apply and prefer
+the policy object identifier given in the request over the default policy
+id specified in the <a href="Factory.html">Factory</a>. As a consequence,
+<code>default_policy_id</code> will only be applied if no <a
+href="Request.html#method-i-policy_id">OpenSSL::Timestamp::Request#policy_id</a>
+was given. But this also means that one needs to check the policy
+identifier in the request manually before creating the <a
+href="Response.html">Response</a>, e.g. to check whether it complies to a
+specific set of acceptable policies.</p>
+
+<p>There exists also the possibility to add certificates (instances of <a
+href="../X509/Certificate.html">OpenSSL::X509::Certificate</a>) besides the
+timestamping certificate that will be included in the resulting timestamp
+token if <a
+href="Request.html#method-i-cert_requested-3F">OpenSSL::Timestamp::Request#cert_requested?</a>
+is <code>true</code>. Ideally, one would also include any intermediate
+certificates (the root certificate can be left out - in order to trust it
+any verifying party will have to be in its possession anyway). This
+simplifies validation of the timestamp since these intermediate
+certificates are "already there" and need not be passed as external
+parameters to <a
+href="Response.html#method-i-verify">OpenSSL::Timestamp::Response#verify</a>
+anymore, thus minimizing external resources needed for verification.</p>
+
+<h3 id="class-OpenSSL::Timestamp::Factory-label-Example-3A+Inclusion+of+-28untrusted-29+intermediate+certificates">Example: Inclusion of (untrusted) intermediate certificates<span><a href="#class-OpenSSL::Timestamp::Factory-label-Example-3A+Inclusion+of+-28untrusted-29+intermediate+certificates">&para;</a> <a href="#top">&uarr;</a></span></h3>
+
+<p>Assume we received a timestamp request that has set <a
+href="Request.html#method-i-policy_id">OpenSSL::Timestamp::Request#policy_id</a>
+to <code>nil</code> and <a
+href="Request.html#method-i-cert_requested-3F">OpenSSL::Timestamp::Request#cert_requested?</a>
+to true. The raw request bytes are stored in a variable called
+<code>req_raw</code>. We'd still like to integrate the necessary
+intermediate certificates (in <code>inter1.cer</code> and
+<code>inter2.cer</code>) to simplify validation of the resulting <a
+href="Response.html">Response</a>. <code>ts.p12</code> is a
+PKCS#12-compatible file including the private key and the timestamping
+certificate.</p>
+
+<pre>req = OpenSSL::Timestamp::Request.new(raw_bytes)
+p12 = OpenSSL::PKCS12.new(File.open('ts.p12', 'rb'), 'pwd')
+inter1 = OpenSSL::X509::Certificate.new(File.open('inter1.cer', 'rb')
+inter2 = OpenSSL::X509::Certificate.new(File.open('inter2.cer', 'rb')
+fac = OpenSSL::Timestamp::Factory.new
+fac.gen_time = Time.now
+fac.serial_number = 1
+fac.allowed_digests = [&quot;sha256&quot;, &quot;sha384&quot;, &quot;sha512&quot;]
+#needed because the Request contained no policy identifier
+fac.default_policy_id = '1.2.3.4.5'
+fac.additional_certificates = [ inter1, inter2 ]
+timestamp = fac.create_timestamp(p12.key, p12.certificate, req)</pre>
+
+<h2 id="class-OpenSSL::Timestamp::Factory-label-Attributes">Attributes<span><a href="#class-OpenSSL::Timestamp::Factory-label-Attributes">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<h3 id="class-OpenSSL::Timestamp::Factory-label-default_policy_id"><a href="Factory.html#attribute-i-default_policy_id">#default_policy_id</a><span><a href="#class-OpenSSL::Timestamp::Factory-label-default_policy_id">&para;</a> <a href="#top">&uarr;</a></span></h3>
+
+<p><a
+href="Request.html#method-i-policy_id">OpenSSL::Timestamp::Request#policy_id</a>
+will always be preferred over this if present in the <a
+href="Request.html">Request</a>, only if <a
+href="Request.html#method-i-policy_id">OpenSSL::Timestamp::Request#policy_id</a>
+is nil default_policy will be used. If none of both is present, a <a
+href="TimestampError.html">TimestampError</a> will be raised when trying to
+create a <a href="Response.html">Response</a>.</p>
+
+<p>call-seq:</p>
+
+<pre>factory.default_policy_id = &quot;string&quot; -&gt; string
+factory.default_policy_id            -&gt; string or nil</pre>
+
+<h3 id="class-OpenSSL::Timestamp::Factory-label-serial_number"><a href="Factory.html#attribute-i-serial_number">#serial_number</a><span><a href="#class-OpenSSL::Timestamp::Factory-label-serial_number">&para;</a> <a href="#top">&uarr;</a></span></h3>
+
+<p>Sets or retrieves the serial number to be used for timestamp creation. Must
+be present for timestamp creation.</p>
+
+<p>call-seq:</p>
+
+<pre>factory.serial_number = number -&gt; number
+factory.serial_number          -&gt; number or nil</pre>
+
+<h3 id="class-OpenSSL::Timestamp::Factory-label-gen_time"><a href="Factory.html#attribute-i-gen_time">#gen_time</a><span><a href="#class-OpenSSL::Timestamp::Factory-label-gen_time">&para;</a> <a href="#top">&uarr;</a></span></h3>
+
+<p>Sets or retrieves the Time value to be used in the <a
+href="Response.html">Response</a>. Must be present for timestamp creation.</p>
+
+<p>call-seq:</p>
+
+<pre>factory.gen_time = Time -&gt; Time
+factory.gen_time        -&gt; Time or nil</pre>
+
+<h3 id="class-OpenSSL::Timestamp::Factory-label-additional_certs"><a href="Factory.html#attribute-i-additional_certs">#additional_certs</a><span><a href="#class-OpenSSL::Timestamp::Factory-label-additional_certs">&para;</a> <a href="#top">&uarr;</a></span></h3>
+
+<p>Sets or retrieves additional certificates apart from the timestamp
+certificate (e.g. intermediate certificates) to be added to the <a
+href="Response.html">Response</a>. Must be an Array of <a
+href="../X509/Certificate.html">OpenSSL::X509::Certificate</a>.</p>
+
+<p>call-seq:</p>
+
+<pre>factory.additional_certs = [cert1, cert2] -&gt; [ cert1, cert2 ]
+factory.additional_certs                  -&gt; array or nil</pre>
+
+<h3 id="class-OpenSSL::Timestamp::Factory-label-allowed_digests"><a href="Factory.html#attribute-i-allowed_digests">#allowed_digests</a><span><a href="#class-OpenSSL::Timestamp::Factory-label-allowed_digests">&para;</a> <a href="#top">&uarr;</a></span></h3>
+
+<p>Sets or retrieves the digest algorithms that the factory is allowed create
+timestamps for. Known vulnerable or weak algorithms should not be allowed
+where possible. Must be an Array of String or <a
+href="../Digest.html">OpenSSL::Digest</a> subclass instances.</p>
+
+<p>call-seq:</p>
+
+<pre>factory.allowed_digests = [&quot;sha1&quot;, OpenSSL::Digest::SHA256.new] -&gt; [ &quot;sha1&quot;, OpenSSL::Digest::SHA256.new ]
+factory.allowed_digests                                         -&gt; array or nil</pre>
+
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+      <!-- Attributes -->
+      <div id="attribute-method-details" class="method-section section">
+        <h3 class="section-header">Attributes</h3>
+
+        
+        <div id="additional_certs-attribute-method" class="method-detail">
+          <a name="additional_certs"></a>
+          
+          <a name="additional_certs="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">additional_certs</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description 245">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="allowed_digests-attribute-method" class="method-detail">
+          <a name="allowed_digests"></a>
+          
+          <a name="allowed_digests="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">allowed_digests</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description 245">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="default_policy_id-attribute-method" class="method-detail">
+          <a name="default_policy_id"></a>
+          
+          <a name="default_policy_id="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">default_policy_id</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description 245">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="gen_time-attribute-method" class="method-detail">
+          <a name="gen_time"></a>
+          
+          <a name="gen_time="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">gen_time</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description 245">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="serial_number-attribute-method" class="method-detail">
+          <a name="serial_number"></a>
+          
+          <a name="serial_number="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">serial_number</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description 245">
+          
+          
+          
+          </div>
+        </div>
+        
+      </div><!-- attribute-method-details -->
+      
+
+      <!-- Methods -->
+      
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="create_timestamp-method" class="method-detail ">
+          <a name="method-i-create_timestamp"></a>
+
+          
+          
+          <div class="method-heading">
+            <span class="method-callseq">create_timestamp(key, certificate, request) &rarr; Response</span>
+            
+            <span class="method-click-advice">click to toggle source</span>
+            
+          </div>
+          
+          
+          <div>
+  
+            
+            <p>Creates a <a href="Response.html">Response</a> with the help of an <a
+href="../PKey.html">OpenSSL::PKey</a>, an <a
+href="../X509/Certificate.html">OpenSSL::X509::Certificate</a> and a <a
+href="Request.html">Request</a>.</p>
+
+<p>Mandatory parameters for timestamp creation that need to be set in the
+Request:</p>
+<ul><li>
+<p><a
+href="Request.html#method-i-algorithm">OpenSSL::Timestamp::Request#algorithm</a></p>
+</li><li>
+<p><a
+href="Request.html#method-i-message_imprint">OpenSSL::Timestamp::Request#message_imprint</a></p>
+</li></ul>
+
+<p>Mandatory parameters that need to be set in the Factory:</p>
+<ul><li>
+<p><a href="Factory.html#attribute-i-serial_number">#serial_number</a></p>
+</li><li>
+<p><a href="Factory.html#attribute-i-gen_time">#gen_time</a></p>
+</li><li>
+<p><a href="Factory.html#attribute-i-allowed_digests">#allowed_digests</a></p>
+</li></ul>
+
+<p>In addition one of either <a
+href="Request.html#method-i-policy_id">OpenSSL::Timestamp::Request#policy_id</a>
+or <a
+href="Factory.html#attribute-i-default_policy_id">#default_policy_id</a>
+must be set.</p>
+
+<p>Raises a <a href="TimestampError.html">TimestampError</a> if creation
+fails, though successfully created error responses may be returned.</p>
+            
+
+            
+            <div class="method-source-code" id="create_timestamp-source">
+              <pre> <!-- method.markup_code 290 -->
+               static VALUE
+ossl_tsfac_create_ts(VALUE self, VALUE key, VALUE certificate, VALUE request)
+{
+    VALUE serial_number, def_policy_id, gen_time, additional_certs, allowed_digests;
+    VALUE str;
+    STACK_OF(X509) *inter_certs;
+    VALUE tsresp, ret = Qnil;
+    EVP_PKEY *sign_key;
+    X509 *tsa_cert;
+    TS_REQ *req;
+    TS_RESP *response = NULL;
+    TS_RESP_CTX *ctx = NULL;
+    BIO *req_bio;
+    ASN1_INTEGER *asn1_serial = NULL;
+    ASN1_OBJECT *def_policy_id_obj = NULL;
+    long lgen_time;
+    const char * err_msg = NULL;
+    int status = 0;
+
+    tsresp = NewTSResponse(cTimestampResponse);
+    tsa_cert = GetX509CertPtr(certificate);
+    sign_key = GetPrivPKeyPtr(key);
+    GetTSRequest(request, req);
+
+    gen_time = ossl_tsfac_get_gen_time(self);
+    if (!rb_obj_is_instance_of(gen_time, rb_cTime)) {
+        err_msg = &quot;@gen_time must be a Time.&quot;;
+        goto end;
+    }
+    lgen_time = NUM2LONG(rb_funcall(gen_time, rb_intern(&quot;to_i&quot;), 0));
+
+    serial_number = ossl_tsfac_get_serial_number(self);
+    if (NIL_P(serial_number)) {
+        err_msg = &quot;@serial_number must be set.&quot;;
+        goto end;
+    }
+    asn1_serial = num_to_asn1integer(serial_number, NULL);
+
+    def_policy_id = ossl_tsfac_get_default_policy_id(self);
+    if (NIL_P(def_policy_id) &amp;&amp; !TS_REQ_get_policy_id(req)) {
+        err_msg = &quot;No policy id in the request and no default policy set&quot;;
+        goto end;
+    }
+    if (!NIL_P(def_policy_id) &amp;&amp; !TS_REQ_get_policy_id(req)) {
+        def_policy_id_obj = (ASN1_OBJECT*)rb_protect((VALUE (*)(VALUE))obj_to_asn1obj, (VALUE)def_policy_id, &amp;status);
+        if (status)
+            goto end;
+    }
+
+    if (!(ctx = TS_RESP_CTX_new())) {
+        err_msg = &quot;Memory allocation failed.&quot;;
+        goto end;
+    }
+
+    TS_RESP_CTX_set_serial_cb(ctx, ossl_tsfac_serial_cb, &amp;asn1_serial);
+    if (!TS_RESP_CTX_set_signer_cert(ctx, tsa_cert)) {
+        err_msg = &quot;Certificate does not contain the timestamping extension&quot;;
+        goto end;
+    }
+
+    additional_certs = ossl_tsfac_get_additional_certs(self);
+    if (rb_obj_is_kind_of(additional_certs, rb_cArray)) {
+        inter_certs = ossl_protect_x509_ary2sk(additional_certs, &amp;status);
+        if (status)
+                goto end;
+
+        /* this dups the sk_X509 and ups each cert's ref count */
+        TS_RESP_CTX_set_certs(ctx, inter_certs);
+        sk_X509_pop_free(inter_certs, X509_free);
+    }
+
+    TS_RESP_CTX_set_signer_key(ctx, sign_key);
+    if (!NIL_P(def_policy_id) &amp;&amp; !TS_REQ_get_policy_id(req))
+        TS_RESP_CTX_set_def_policy(ctx, def_policy_id_obj);
+    if (TS_REQ_get_policy_id(req))
+        TS_RESP_CTX_set_def_policy(ctx, TS_REQ_get_policy_id(req));
+    TS_RESP_CTX_set_time_cb(ctx, ossl_tsfac_time_cb, &amp;lgen_time);
+
+    allowed_digests = ossl_tsfac_get_allowed_digests(self);
+    if (rb_obj_is_kind_of(allowed_digests, rb_cArray)) {
+        int i;
+        VALUE rbmd;
+        const EVP_MD *md;
+
+        for (i = 0; i &lt; RARRAY_LEN(allowed_digests); i++) {
+            rbmd = rb_ary_entry(allowed_digests, i);
+            md = (const EVP_MD *)rb_protect((VALUE (*)(VALUE))ossl_evp_get_digestbyname, rbmd, &amp;status);
+            if (status)
+                goto end;
+            TS_RESP_CTX_add_md(ctx, md);
+        }
+    }
+
+    str = rb_protect(ossl_to_der, request, &amp;status);
+    if (status)
+        goto end;
+
+    req_bio = (BIO*)rb_protect((VALUE (*)(VALUE))ossl_obj2bio, (VALUE)&amp;str, &amp;status);
+    if (status)
+        goto end;
+
+    response = TS_RESP_create_response(ctx, req_bio);
+    BIO_free(req_bio);
+
+    if (!response) {
+        err_msg = &quot;Error during response generation&quot;;
+        goto end;
+    }
+
+    /* bad responses aren't exceptional, but openssl still sets error
+     * information. */
+    ossl_clear_error();
+
+    SetTSResponse(tsresp, response);
+    ret = tsresp;
+
+end:
+    ASN1_INTEGER_free(asn1_serial);
+    ASN1_OBJECT_free(def_policy_id_obj);
+    TS_RESP_CTX_free(ctx);
+    if (err_msg)
+        ossl_raise(eTimestampError, err_msg);
+    if (status)
+        rb_jump_tag(status);
+    return ret;
+}
+            </pre> 
+            </div><!-- create_timestamp-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- create_timestamp-method -->
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+  <div id='tx_Factory_versioned' class='associated_wrapper'></div><script type='text/javascript'>$("#tx_Factory_versioned").load("/associated/2.5.2/Factory.ihtml");</script> <div id='tx_Factory' class='associated_wrapper'></div><script type='text/javascript'>$("#tx_Factory").load("/associated/Factory.ihtml");</script> 
+      
+  <!-- dsqus ? -->
+     
+
+  
+  </div><!-- documentation -->
+  <div id='dynamic'>
+  </div>
+      
+          
+
+      
+<div class='grids wrapper' id="footer">
+  <p><small>This page was generated for Ruby 2.5.2</small></p> 
+  
+   <p><a href="http://ruby-doc.org">Ruby-doc.org</a> is a service of <a href="http://jamesbritt.com">James Britt</a> and <a href="http://neurogami.com">Neurogami</a>, an erratic source of art, music, and technology.  <div class='oio-inline'><ins data-revive-zoneid="1" data-revive-id="58924a5717c091dfee6dda3f7d38c4d7"></ins><script async src="//ras.ruby-doc.org/vvv/delivery/thesinkjs.php"></script></div></p>
+ 
+       <p><small>Generated with Ruby-doc Rdoc Generator 0.44.2</small>.</p>
+  </div>
+</div>
+  
+  
+
+    
+ <script type='text/javascript'>
+$(document).ready(function() {
+      $.ajaxSetup({ cache: false });
+      $("#vulns-alert").load("/associated/vulns.ihtml");
+    });
+
+    </script>
+
+
+ 
+		<script type='text/javascript'>
+
+	function loadPlus(plusdocs){
+			$(plusdocs).find("div[class='associated_wrapper']").each (function() {
+					$("#" + this.id).append($(plusdocs).find("#" + this.id ));
+					});
+	} 
+
+   //function loadInline(json){
+   // for (var lookFor in json) {
+    //  $(lookFor).after(json[lookFor]);
+    // }
+  // } // end loadInline
+
+
+$(document).ready(function() {
+		$.ajaxSetup({ cache: false });
+			$.get('/associated/2.5.2/plus_Factory.ihtml', 
+			function(plusdocs) {
+			setTimeout(function() {
+				loadPlus(plusdocs);
+				}, 2000);
+			}
+			);
+
+
+//     $.ajax({
+//     dataType: "json",
+//      url: '/associated/2.5.2/inline_Factory.js',
+//      success: function(json) {
+// 			setTimeout(function() {
+// 				loadInline(json);
+// 				}, 2000);
+// 			}
+//    });
+
+		});
+</script>
+		
+</body>
+</html>
+
+

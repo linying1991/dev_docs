@@ -1,0 +1,1 @@
+var search_data = {"index":{"searchIndex":["rss"],"longSearchIndex":["rss"],"info":[["RSS","","RSS.html","","<p>frozen_string_literal: false\n<p>RSS reading and writing\n<p>Really Simple Syndication (RSS) is a family of formats …\n"]]}}

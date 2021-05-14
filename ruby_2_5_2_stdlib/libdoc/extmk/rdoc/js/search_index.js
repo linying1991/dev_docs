@@ -1,0 +1,1 @@
+var search_data = {"index":{"searchIndex":["dir","file","fileutils","object"],"longSearchIndex":["dir","file","fileutils","object"],"info":[["Dir","","Dir.html","",""],["File","","File.html","",""],["FileUtils","","FileUtils.html","",""],["Object","","Object.html","",""]]}}

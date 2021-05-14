@@ -1,0 +1,14 @@
+Tue, 17 Mar 2020 23:11:44 -0500
+win32ole/lib/win32ole/property.rb	Tue, 17 Mar 2020 20:07:53 -0500
+win32ole/lib/win32ole.rb	Tue, 17 Mar 2020 20:07:53 -0500
+win32ole/win32ole.c	Tue, 17 Mar 2020 20:07:53 -0500
+win32ole/win32ole_error.c	Tue, 17 Mar 2020 20:07:53 -0500
+win32ole/win32ole_event.c	Tue, 17 Mar 2020 20:07:53 -0500
+win32ole/win32ole_method.c	Tue, 17 Mar 2020 20:07:53 -0500
+win32ole/win32ole_param.c	Tue, 17 Mar 2020 20:07:53 -0500
+win32ole/win32ole_record.c	Tue, 17 Mar 2020 20:07:53 -0500
+win32ole/win32ole_type.c	Tue, 17 Mar 2020 20:07:53 -0500
+win32ole/win32ole_typelib.c	Tue, 17 Mar 2020 20:07:53 -0500
+win32ole/win32ole_variable.c	Tue, 17 Mar 2020 20:07:53 -0500
+win32ole/win32ole_variant.c	Tue, 17 Mar 2020 20:07:53 -0500
+win32ole/win32ole_variant_m.c	Tue, 17 Mar 2020 20:07:53 -0500
