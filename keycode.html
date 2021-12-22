@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeyCode</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #text {
+      text-align: center;
+      width: 300px;
+      height: 40px;
+      margin: 10px 0;
+    }
+    .td-left {
+      width: 150px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div id="preview"></div>
+    <input type="text" id="text" placeholder="请按下想获取键值的按键...">
+  </div>
+</body>
+<script>
+  const preview = document.getElementById("preview");
+  const text = document.getElementById("text");
+  text.onkeydown = (ev) => {
+    preview.innerHTML = `
+      <table>
+        <tr>
+          <td class="td-left">event.key</td>
+          <td>${ev.key}</td>
+        </tr>
+        <tr>
+          <td class="td-left">event.keyCode</td>
+          <td>${ev.keyCode}</td>
+        </tr>
+        <tr>
+          <td class="td-left">event.code</td>
+          <td>${ev.code}</td>
+        </tr>
+      </table>
+    `;
+    ev.preventDefault();
+  }
+  text.onblur = () => {
+    text.focus();
+  }
+  window.onload = () => {
+    text.focus();
+  }
+</script>
+</html>
