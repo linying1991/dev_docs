@@ -1,61 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="./favicon.png">
   <title>开发文档</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./index/bootstrap.min.css" rel="stylesheet">
+
   <style>
     body {
-      background-color: #edf2f7;
+      background-color: #edf2f736;
     }
 
-    a {
-      position: relative;
-      margin: 20px;
-      padding: 1.2em 2em;
-      color: #409eff;
-      font-size: .875rem;
-      box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
-      border-color: white;
-      background-color: white;
-      cursor: pointer;
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    a, a:link, a:visited, a:hover, a:active{
+      color: #333;
       text-decoration: none;
+    }
+
+    .feature {
+      padding: 5px 20px;
+    }
+    .feature > a {
       display: block;
-      text-align: center;
-      border-radius: .375rem;
-      font-weight: 600;
+      padding: 20px 20px;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0px 0px 25px 0px #00000022;
       transition: all .5s ease;
     }
-
-    a:hover {
+    .feature > a:hover {
       transform: translateY(-2px);
     }
-
-    body {
-      margin: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      transform-style: preserve-3d;
-      transform: perspective(800px);
-    }
   </style>
+  <link href="./index/features.css" rel="stylesheet">
 </head>
 
 <body>
-  <div>
-    <a href="./ruby-api-docs-2019">ruby-api-docs-2019</a>
-    <a href="./ruby-api-docs-2022">ruby-api-docs-2022</a>
-    <a href="./ruby_2_5_5_core">ruby-2.5.5-core</a>
-    <a href="./ruby_2_5_2_stdlib">ruby-2.5.2-stdlib</a>
-    <a href="./AMS-Library-3.6.1">AMS-Library-3.6.1</a>
-    <a href="./yard">YARD-0.9.26</a>
-    <a href="./keycode.html">KeyCode</a>
-  </div>
-</body>
+  <main id="app">
+    <div class="container px-4 py-5" id="featured-3">
+      <h2 class="pb-2 border-bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-code" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2d89ef" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+          <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+          <path d="M10 13l-1 2l1 2" />
+          <path d="M14 13l1 2l-1 2" />
+        </svg>
+        开发文档
+      </h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
 
+        <div class="feature col" v-for="item in items" :key="item.title">
+          <a :href="item.href">
+            <h2>{{ item.title }}</h2>
+            <p>{{ item.description || "详细说明" }}</p>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+
+  </main>
+
+  <script src="./index/bootstrap.bundle.min.js"></script>
+  <script src="./index/vue.min.js"></script>
+  <script>
+    const items = [
+      {
+        title: "Ruby API Docs 2019",
+        description: "SketchUp 2019 官方接口文档",
+        href: "./ruby-api-docs-2019/",
+      },
+      {
+        title: "Ruby API Docs 2022",
+        description: "SketchUp 2022 官方接口文档",
+        href: "./ruby-api-docs-2022/",
+      },
+      {
+        title: "Ruby 2.5.5 core",
+        description: "Ruby 官方核心库文档",
+        href: "./ruby_2_5_5_core/",
+      },
+      {
+        title: "Ruby 2.5.2 stdlib",
+        description: "Ruby 官方标准库文档",
+        href: "./ruby_2_5_2_stdlib/",
+      },
+      {
+        title: "AMS Library 3.6.1",
+        description: "AMS Library 官方文档",
+        href: "./AMS-Library-3.6.1/",
+      },
+      {
+        title: "YARD 0.9.26",
+        description: "YARD 官方文档",
+        href: "./yard/",
+      },
+      {
+        title: "Key Code",
+        description: "获取指定按键的键代码",
+        href: "./keycode.html",
+      },
+    ];
+    new Vue({
+      el: "#app",
+      data: {
+        items: items
+      }
+    })
+  </script>
+
+</body>
 </html>
