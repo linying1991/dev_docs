@@ -39,13 +39,21 @@
   text.onkeydown = (ev) => {
     preview.innerHTML = `
       <table>
-        <tr>
-          <td class="td-left">event.key</td>
-          <td>${ev.key}</td>
+        <tr style="display: ${ev.ctrlKey ? 'block' : 'none'};">
+          <td class="td-left">event.ctrlKey</td>
+          <td>${ev.ctrlKey}</td>
         </tr>
-        <tr>
-          <td class="td-left">event.keyCode</td>
-          <td>${ev.keyCode}</td>
+        <tr style="display: ${ev.metaKey ? 'block' : 'none'};">
+          <td class="td-left">event.metaKey</td>
+          <td>${ev.metaKey}</td>
+        </tr>
+        <tr style="display: ${ev.shiftKey ? 'block' : 'none'};">
+          <td class="td-left">event.shiftKey</td>
+          <td>${ev.shiftKey}</td>
+        </tr>
+        <tr style="display: ${ev.altKey ? 'block' : 'none'};">
+          <td class="td-left">event.altKey</td>
+          <td>${ev.altKey}</td>
         </tr>
         <tr>
           <td class="td-left" style="color: red;">event.code（推荐）</td>
