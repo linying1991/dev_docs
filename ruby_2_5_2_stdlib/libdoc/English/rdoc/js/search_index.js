@@ -1,1 +1,0 @@
-var search_data = {"index":{"searchIndex":["english","object"],"longSearchIndex":["english","object"],"info":[["English","","English.html","","<p>frozen_string_literal: true\n\n<pre>Include the English library file in a Ruby script, and you can\nreference the ...</pre>\n"],["Object","","Object.html","",""]]}}
