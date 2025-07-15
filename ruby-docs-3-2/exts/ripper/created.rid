@@ -1,0 +1,15 @@
+Sat, 27 Jul 2024 16:23:04 -0400
+ripper/eventids1.c	Fri, 26 Jul 2024 07:54:29 -0400
+ripper/eventids2.c	Fri, 26 Jul 2024 07:54:27 -0400
+ripper/eventids2table.c	Fri, 26 Jul 2024 07:54:29 -0400
+ripper/lib/ripper/core.rb	Fri, 26 Jul 2024 07:54:27 -0400
+ripper/lib/ripper/filter.rb	Fri, 26 Jul 2024 07:54:27 -0400
+ripper/lib/ripper/lexer.rb	Fri, 26 Jul 2024 07:54:27 -0400
+ripper/lib/ripper/sexp.rb	Fri, 26 Jul 2024 07:54:27 -0400
+ripper/lib/ripper.rb	Fri, 26 Jul 2024 07:54:27 -0400
+ripper/ripper.c	Fri, 26 Jul 2024 07:54:29 -0400
+ripper/tools/dsl.rb	Fri, 26 Jul 2024 07:54:27 -0400
+ripper/tools/generate-param-macros.rb	Fri, 26 Jul 2024 07:54:27 -0400
+ripper/tools/generate.rb	Fri, 26 Jul 2024 07:54:27 -0400
+ripper/tools/preproc.rb	Fri, 26 Jul 2024 07:54:27 -0400
+ripper/tools/strip.rb	Fri, 26 Jul 2024 07:54:27 -0400

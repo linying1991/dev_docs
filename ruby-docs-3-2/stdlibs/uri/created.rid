@@ -1,0 +1,16 @@
+Sat, 27 Jul 2024 16:27:40 -0400
+uri.rb	Fri, 26 Jul 2024 07:54:27 -0400
+uri/common.rb	Fri, 26 Jul 2024 07:54:27 -0400
+uri/file.rb	Fri, 26 Jul 2024 07:54:27 -0400
+uri/ftp.rb	Fri, 26 Jul 2024 07:54:27 -0400
+uri/generic.rb	Fri, 26 Jul 2024 07:54:27 -0400
+uri/http.rb	Fri, 26 Jul 2024 07:54:27 -0400
+uri/https.rb	Fri, 26 Jul 2024 07:54:27 -0400
+uri/ldap.rb	Fri, 26 Jul 2024 07:54:27 -0400
+uri/ldaps.rb	Fri, 26 Jul 2024 07:54:27 -0400
+uri/mailto.rb	Fri, 26 Jul 2024 07:54:27 -0400
+uri/rfc2396_parser.rb	Fri, 26 Jul 2024 07:54:27 -0400
+uri/rfc3986_parser.rb	Fri, 26 Jul 2024 07:54:27 -0400
+uri/version.rb	Fri, 26 Jul 2024 07:54:27 -0400
+uri/ws.rb	Fri, 26 Jul 2024 07:54:27 -0400
+uri/wss.rb	Fri, 26 Jul 2024 07:54:27 -0400

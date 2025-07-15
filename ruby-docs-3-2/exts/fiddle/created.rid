@@ -1,0 +1,20 @@
+Sat, 27 Jul 2024 16:12:03 -0400
+fiddle/closure.c	Fri, 26 Jul 2024 07:54:27 -0400
+fiddle/conversions.c	Fri, 26 Jul 2024 07:54:27 -0400
+fiddle/fiddle.c	Fri, 26 Jul 2024 07:54:27 -0400
+fiddle/function.c	Fri, 26 Jul 2024 07:54:27 -0400
+fiddle/handle.c	Fri, 26 Jul 2024 07:54:27 -0400
+fiddle/lib/fiddle/closure.rb	Fri, 26 Jul 2024 07:54:27 -0400
+fiddle/lib/fiddle/cparser.rb	Fri, 26 Jul 2024 07:54:27 -0400
+fiddle/lib/fiddle/function.rb	Fri, 26 Jul 2024 07:54:27 -0400
+fiddle/lib/fiddle/import.rb	Fri, 26 Jul 2024 07:54:27 -0400
+fiddle/lib/fiddle/pack.rb	Fri, 26 Jul 2024 07:54:27 -0400
+fiddle/lib/fiddle/struct.rb	Fri, 26 Jul 2024 07:54:27 -0400
+fiddle/lib/fiddle/types.rb	Fri, 26 Jul 2024 07:54:27 -0400
+fiddle/lib/fiddle/value.rb	Fri, 26 Jul 2024 07:54:27 -0400
+fiddle/lib/fiddle/version.rb	Fri, 26 Jul 2024 07:54:27 -0400
+fiddle/lib/fiddle.rb	Fri, 26 Jul 2024 07:54:27 -0400
+fiddle/memory_view.c	Fri, 26 Jul 2024 07:54:27 -0400
+fiddle/pinned.c	Fri, 26 Jul 2024 07:54:27 -0400
+fiddle/pointer.c	Fri, 26 Jul 2024 07:54:27 -0400
+fiddle/win32/libffi-config.rb	Fri, 26 Jul 2024 07:54:27 -0400

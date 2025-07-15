@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Ripper - RDoc Documentation</title>
+
+
+<script src="./js/navigation.js" defer></script>
+<script src="./js/search.js" defer></script>
+<script src="./js/search_index.js" defer></script>
+<script src="./js/searcher.js" defer></script>
+<script src="./js/darkfish.js" defer></script>
+
+<script src="./js/jquery-3.2.0.min.js"></script>
+
+<script src="./js/vue.min.js"></script>
+<script src="./js/js.cookie.min.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link id='rdoccss' href="./css/rdoc.css" rel="stylesheet">
+<link href="./css/carbon17.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+  var index_rel_prefix = "./";
+  var darkModeCsseHref = "./css/rdoc-dm.css"
+  var defaultModeCssHref = "./css/rdoc.css"
+  // var cssDarkmode = Cookies.get('darkmode');
+  
+  if( Cookies.get("darkmode") == "true") {
+	$('#rdoccss').attr("href", darkModeCsseHref);
+}
+
+//  https://cssdeck.com/blog/simple-jquery-stylesheet-switcher/
+
+document.write('<style type="text/css">body{display:none}</style>');
+
+</script>
+
+
+</head>
+<body id="top" role="document" class="class">
+  <!-- this is class.html -->
+
+  <div id='actionbar' >
+    <div class='wrapper mdiv'>
+      <ul class='grids g0'></ul>
+    </div> 
+    <!-- VERSION HEADER for 3.2.5 NOT FOUND -->
+  </div> <!-- end action bar -->
+
+  <div class='wrapper hdiv'>
+
+    
+
+
+    <nav id='vapp' role="navigation">
+    <div id="project-navigation">
+      <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2><a href="./index.html" rel="home">Home</a></h2>
+
+  <div id="table-of-contents-navigation"  >
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+      <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+    </div>
+
+
+    
+
+    <button id='toggleThing' @click="toggleNav()" >Show/hide navigation</button>
+    <div :class="isOpen ? 'block' : 'hidden' " id='toggleMe'>
+      <div id="class-metadata">
+        
+        
+<div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  <p class="link"><a href="Object.html">Object</a>
+</div>
+
+        
+        
+        
+<!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    <li ><a href="#method-c-dedent_string">::dedent_string</a>
+    <li ><a href="#method-c-lex_state_name">::lex_state_name</a>
+    <li ><a href="#method-c-new">::new</a>
+    <li ><a href="#method-i-column">#column</a>
+    <li ><a href="#method-i-debug_output">#debug_output</a>
+    <li ><a href="#method-i-debug_output-3D">#debug_output=</a>
+    <li ><a href="#method-i-dedent_string">#dedent_string</a>
+    <li ><a href="#method-i-encoding">#encoding</a>
+    <li ><a href="#method-i-end_seen-3F">#end_seen?</a>
+    <li ><a href="#method-i-error-3F">#error?</a>
+    <li ><a href="#method-i-filename">#filename</a>
+    <li ><a href="#method-i-lineno">#lineno</a>
+    <li ><a href="#method-i-parse">#parse</a>
+    <li ><a href="#method-i-state">#state</a>
+    <li ><a href="#method-i-token">#token</a>
+    <li ><a href="#method-i-yydebug">#yydebug</a>
+    <li ><a href="#method-i-yydebug-3D">#yydebug=</a>
+  </ul>
+</div>
+
+      </div>
+     </div>
+    </nav>
+
+
+    <div id='extraz'><div class='adzbox-index'  >
+      
+     </div>         
+    </div>
+
+    <main role="main" aria-labelledby="class-Ripper">
+    <h1 id="class-Ripper" class="class">
+      class Ripper
+    </h1>
+
+    <section class="description">
+    
+    </section>
+
+      <section id="5Buntitled-5D" class="documentation-section">
+
+
+      <section class="constants-list">
+      <header>
+      <h3>Constants</h3>
+      </header>
+      <dl>
+          <dt id="Version">Version
+          <dd><p>version of <a href="Ripper.html"><code>Ripper</code></a></p>
+        </dl>
+        </section>
+
+
+
+                <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+                <header>
+                <h3>Public Class Methods</h3>
+                </header>
+
+                  <div id="method-c-dedent_string" class="method-detail ">
+                      <div class="method-heading">
+                        <span class="method-callseq">
+                          dedent_string(input, width)   &rarr; Integer
+                              </span>
+                              <span class="method-click-advice">click to toggle source</span>
+                            </div>
+
+                            <div class="method-description">
+                              <p>USE OF RIPPER LIBRARY ONLY.</p>
+
+<p>Strips up to <code>width</code> leading whitespaces from <code>input</code>, and returns the stripped column width.</p>
+
+                              <div class="method-source-code" id="dedent_string-source">
+            <pre>static VALUE
+parser_dedent_string(VALUE self, VALUE input, VALUE width)
+{
+    int wid, col;
+
+    StringValue(input);
+    wid = NUM2UINT(width);
+    col = dedent_string(input, wid);
+    return INT2NUM(col);
+}</pre>
+                              </div>
+                            </div>
+
+
+                          </div>
+
+                  <div id="method-c-lex_state_name" class="method-detail ">
+                      <div class="method-heading">
+                        <span class="method-callseq">
+                          lex_state_name(integer)   &rarr; string
+                              </span>
+                              <span class="method-click-advice">click to toggle source</span>
+                            </div>
+
+                            <div class="method-description">
+                              <p>Returns a string representation of lex_state.</p>
+
+                              <div class="method-source-code" id="lex_state_name-source">
+            <pre>static VALUE
+ripper_lex_state_name(VALUE self, VALUE state)
+{
+    return rb_parser_lex_state_name(NUM2INT(state));
+}</pre>
+                              </div>
+                            </div>
+
+
+                          </div>
+
+                  <div id="method-c-new" class="method-detail ">
+                      <div class="method-heading">
+                        <span class="method-callseq">
+                          new(src, filename=&quot;(ripper)&quot;, lineno=1) &rarr; ripper
+                              </span>
+                              <span class="method-click-advice">click to toggle source</span>
+                            </div>
+
+                            <div class="method-description">
+                              <p>Create a new <a href="Ripper.html"><code>Ripper</code></a> object. <em>src</em> must be a <a href="String.html"><code>String</code></a>, an <a href="IO.html"><code>IO</code></a>, or an <a href="Object.html"><code>Object</code></a> which has <a href="Kernel.html#method-i-gets"><code>gets</code></a> method.</p>
+
+<p>This method does not starts parsing. See also <a href="Ripper.html#method-i-parse"><code>Ripper#parse</code></a> and <a href="Ripper.html#method-i-parse"><code>Ripper.parse</code></a>.</p>
+
+                              <div class="method-source-code" id="new-source">
+            <pre>static VALUE
+ripper_initialize(int argc, VALUE *argv, VALUE self)
+{
+    struct parser_params *p;
+    VALUE src, fname, lineno;
+
+    TypedData_Get_Struct(self, struct parser_params, &amp;parser_data_type, p);
+    rb_scan_args(argc, argv, &quot;12&quot;, &amp;src, &amp;fname, &amp;lineno);
+    if (RB_TYPE_P(src, T_FILE)) {
+        p-&gt;lex.gets = ripper_lex_io_get;
+    }
+    else if (rb_respond_to(src, id_gets)) {
+        p-&gt;lex.gets = ripper_lex_get_generic;
+    }
+    else {
+        StringValue(src);
+        p-&gt;lex.gets = lex_get_str;
+    }
+    p-&gt;lex.input = src;
+    p-&gt;eofp = 0;
+    if (NIL_P(fname)) {
+        fname = STR_NEW2(&quot;(ripper)&quot;);
+        OBJ_FREEZE(fname);
+    }
+    else {
+        StringValueCStr(fname);
+        fname = rb_str_new_frozen(fname);
+    }
+    parser_initialize(p);
+
+    p-&gt;ruby_sourcefile_string = fname;
+    p-&gt;ruby_sourcefile = RSTRING_PTR(fname);
+    p-&gt;ruby_sourceline = NIL_P(lineno) ? 0 : NUM2INT(lineno) - 1;
+
+    return Qnil;
+}</pre>
+                              </div>
+                            </div>
+
+
+                          </div>
+
+                          </section>
+
+                <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+                <header>
+                <h3>Public Instance Methods</h3>
+                </header>
+
+                  <div id="method-i-column" class="method-detail ">
+                      <div class="method-heading">
+                        <span class="method-callseq">
+                          column   &rarr; Integer
+                              </span>
+                              <span class="method-click-advice">click to toggle source</span>
+                            </div>
+
+                            <div class="method-description">
+                              <p>Return column number of current parsing line. This number starts from 0.</p>
+
+                              <div class="method-source-code" id="column-source">
+            <pre>static VALUE
+ripper_column(VALUE self)
+{
+    struct parser_params *p;
+    long col;
+
+    TypedData_Get_Struct(self, struct parser_params, &amp;parser_data_type, p);
+    if (!ripper_initialized_p(p)) {
+        rb_raise(rb_eArgError, &quot;method called for uninitialized object&quot;);
+    }
+    if (NIL_P(p-&gt;parsing_thread)) return Qnil;
+    col = p-&gt;lex.ptok - p-&gt;lex.pbeg;
+    return LONG2NUM(col);
+}</pre>
+                              </div>
+                            </div>
+
+                            <div class="aliases">
+                              Also aliased as: column
+                            </div>
+
+                          </div>
+
+                  <div id="method-i-debug_output" class="method-detail ">
+                      <div class="method-heading">
+                        <span class="method-callseq">
+                          debug_output   &rarr; obj
+                              </span>
+                              <span class="method-click-advice">click to toggle source</span>
+                            </div>
+
+                            <div class="method-description">
+                              <p>Get debug output.</p>
+
+                              <div class="method-source-code" id="debug_output-source">
+            <pre>VALUE
+rb_parser_get_debug_output(VALUE self)
+{
+    struct parser_params *p;
+
+    TypedData_Get_Struct(self, struct parser_params, &amp;parser_data_type, p);
+    return p-&gt;debug_output;
+}</pre>
+                              </div>
+                            </div>
+
+                            <div class="aliases">
+                              Also aliased as: debug_output
+                            </div>
+
+                          </div>
+
+                  <div id="method-i-debug_output-3D" class="method-detail ">
+                      <div class="method-heading">
+                        <span class="method-callseq">
+                          debug_output = obj
+                              </span>
+                              <span class="method-click-advice">click to toggle source</span>
+                            </div>
+
+                            <div class="method-description">
+                              <p>Set debug output.</p>
+
+                              <div class="method-source-code" id="debug_output-3D-source">
+            <pre>VALUE
+rb_parser_set_debug_output(VALUE self, VALUE output)
+{
+    struct parser_params *p;
+
+    TypedData_Get_Struct(self, struct parser_params, &amp;parser_data_type, p);
+    return p-&gt;debug_output = output;
+}</pre>
+                              </div>
+                            </div>
+
+                            <div class="aliases">
+                              Also aliased as: debug_output=
+                            </div>
+
+                          </div>
+
+                  <div id="method-i-encoding" class="method-detail ">
+                      <div class="method-heading">
+                        <span class="method-callseq">
+                          encoding   &rarr; encoding
+                              </span>
+                              <span class="method-click-advice">click to toggle source</span>
+                            </div>
+
+                            <div class="method-description">
+                              <p>Return encoding of the source.</p>
+
+                              <div class="method-source-code" id="encoding-source">
+            <pre>VALUE
+rb_parser_encoding(VALUE vparser)
+{
+    struct parser_params *p;
+
+    TypedData_Get_Struct(vparser, struct parser_params, &amp;parser_data_type, p);
+    return rb_enc_from_encoding(p-&gt;enc);
+}</pre>
+                              </div>
+                            </div>
+
+                            <div class="aliases">
+                              Also aliased as: encoding
+                            </div>
+
+                          </div>
+
+                  <div id="method-i-end_seen-3F" class="method-detail ">
+                      <div class="method-heading">
+                        <span class="method-callseq">
+                          end_seen?   &rarr; Boolean
+                              </span>
+                              <span class="method-click-advice">click to toggle source</span>
+                            </div>
+
+                            <div class="method-description">
+                              <p>Return true if parsed source ended by +_<em>END</em>_+.</p>
+
+                              <div class="method-source-code" id="end_seen-3F-source">
+            <pre>VALUE
+rb_parser_end_seen_p(VALUE vparser)
+{
+    struct parser_params *p;
+
+    TypedData_Get_Struct(vparser, struct parser_params, &amp;parser_data_type, p);
+    return RBOOL(p-&gt;ruby__end__seen);
+}</pre>
+                              </div>
+                            </div>
+
+                            <div class="aliases">
+                              Also aliased as: end_seen?
+                            </div>
+
+                          </div>
+
+                  <div id="method-i-error-3F" class="method-detail ">
+                      <div class="method-heading">
+                        <span class="method-callseq">
+                          error?   &rarr; Boolean
+                              </span>
+                              <span class="method-click-advice">click to toggle source</span>
+                            </div>
+
+                            <div class="method-description">
+                              <p>Return true if parsed source has errors.</p>
+
+                              <div class="method-source-code" id="error-3F-source">
+            <pre>static VALUE
+ripper_error_p(VALUE vparser)
+{
+    struct parser_params *p;
+
+    TypedData_Get_Struct(vparser, struct parser_params, &amp;parser_data_type, p);
+    return RBOOL(p-&gt;error_p);
+}</pre>
+                              </div>
+                            </div>
+
+                            <div class="aliases">
+                              Also aliased as: error?
+                            </div>
+
+                          </div>
+
+                  <div id="method-i-filename" class="method-detail ">
+                      <div class="method-heading">
+                        <span class="method-callseq">
+                          filename   &rarr; String
+                              </span>
+                              <span class="method-click-advice">click to toggle source</span>
+                            </div>
+
+                            <div class="method-description">
+                              <p>Return current parsing filename.</p>
+
+                              <div class="method-source-code" id="filename-source">
+            <pre>static VALUE
+ripper_filename(VALUE self)
+{
+    struct parser_params *p;
+
+    TypedData_Get_Struct(self, struct parser_params, &amp;parser_data_type, p);
+    if (!ripper_initialized_p(p)) {
+        rb_raise(rb_eArgError, &quot;method called for uninitialized object&quot;);
+    }
+    return p-&gt;ruby_sourcefile_string;
+}</pre>
+                              </div>
+                            </div>
+
+                            <div class="aliases">
+                              Also aliased as: filename
+                            </div>
+
+                          </div>
+
+                  <div id="method-i-lineno" class="method-detail ">
+                      <div class="method-heading">
+                        <span class="method-callseq">
+                          lineno   &rarr; Integer
+                              </span>
+                              <span class="method-click-advice">click to toggle source</span>
+                            </div>
+
+                            <div class="method-description">
+                              <p>Return line number of current parsing line. This number starts from 1.</p>
+
+                              <div class="method-source-code" id="lineno-source">
+            <pre>static VALUE
+ripper_lineno(VALUE self)
+{
+    struct parser_params *p;
+
+    TypedData_Get_Struct(self, struct parser_params, &amp;parser_data_type, p);
+    if (!ripper_initialized_p(p)) {
+        rb_raise(rb_eArgError, &quot;method called for uninitialized object&quot;);
+    }
+    if (NIL_P(p-&gt;parsing_thread)) return Qnil;
+    return INT2NUM(p-&gt;ruby_sourceline);
+}</pre>
+                              </div>
+                            </div>
+
+                            <div class="aliases">
+                              Also aliased as: lineno
+                            </div>
+
+                          </div>
+
+                  <div id="method-i-parse" class="method-detail ">
+                      <div class="method-heading">
+                        <span class="method-callseq">
+                          parse
+                              </span>
+                              <span class="method-click-advice">click to toggle source</span>
+                            </div>
+
+                            <div class="method-description">
+                              <p>Start parsing and returns the value of the root action.</p>
+
+                              <div class="method-source-code" id="parse-source">
+            <pre>static VALUE
+ripper_parse(VALUE self)
+{
+    struct parser_params *p;
+
+    TypedData_Get_Struct(self, struct parser_params, &amp;parser_data_type, p);
+    if (!ripper_initialized_p(p)) {
+        rb_raise(rb_eArgError, &quot;method called for uninitialized object&quot;);
+    }
+    if (!NIL_P(p-&gt;parsing_thread)) {
+        if (p-&gt;parsing_thread == rb_thread_current())
+            rb_raise(rb_eArgError, &quot;Ripper#parse is not reentrant&quot;);
+        else
+            rb_raise(rb_eArgError, &quot;Ripper#parse is not multithread-safe&quot;);
+    }
+    p-&gt;parsing_thread = rb_thread_current();
+    rb_ensure(ripper_parse0, self, ripper_ensure, self);
+
+    return p-&gt;result;
+}</pre>
+                              </div>
+                            </div>
+
+                            <div class="aliases">
+                              Also aliased as: parse
+                            </div>
+
+                          </div>
+
+                  <div id="method-i-state" class="method-detail ">
+                      <div class="method-heading">
+                        <span class="method-callseq">
+                          state   &rarr; Integer
+                              </span>
+                              <span class="method-click-advice">click to toggle source</span>
+                            </div>
+
+                            <div class="method-description">
+                              <p>Return scanner state of current token.</p>
+
+                              <div class="method-source-code" id="state-source">
+            <pre>static VALUE
+ripper_state(VALUE self)
+{
+    struct parser_params *p;
+
+    TypedData_Get_Struct(self, struct parser_params, &amp;parser_data_type, p);
+    if (!ripper_initialized_p(p)) {
+        rb_raise(rb_eArgError, &quot;method called for uninitialized object&quot;);
+    }
+    if (NIL_P(p-&gt;parsing_thread)) return Qnil;
+    return INT2NUM(p-&gt;lex.state);
+}</pre>
+                              </div>
+                            </div>
+
+                            <div class="aliases">
+                              Also aliased as: state
+                            </div>
+
+                          </div>
+
+                  <div id="method-i-token" class="method-detail ">
+                      <div class="method-heading">
+                        <span class="method-callseq">
+                          token   &rarr; String
+                              </span>
+                              <span class="method-click-advice">click to toggle source</span>
+                            </div>
+
+                            <div class="method-description">
+                              <p>Return the current token string.</p>
+
+                              <div class="method-source-code" id="token-source">
+            <pre>static VALUE
+ripper_token(VALUE self)
+{
+    struct parser_params *p;
+    long pos, len;
+
+    TypedData_Get_Struct(self, struct parser_params, &amp;parser_data_type, p);
+    if (!ripper_initialized_p(p)) {
+        rb_raise(rb_eArgError, &quot;method called for uninitialized object&quot;);
+    }
+    if (NIL_P(p-&gt;parsing_thread)) return Qnil;
+    pos = p-&gt;lex.ptok - p-&gt;lex.pbeg;
+    len = p-&gt;lex.pcur - p-&gt;lex.ptok;
+    return rb_str_subseq(p-&gt;lex.lastline, pos, len);
+}</pre>
+                              </div>
+                            </div>
+
+                            <div class="aliases">
+                              Also aliased as: token
+                            </div>
+
+                          </div>
+
+                  <div id="method-i-yydebug" class="method-detail ">
+                      <div class="method-heading">
+                        <span class="method-callseq">
+                          yydebug   &rarr; true or false
+                              </span>
+                              <span class="method-click-advice">click to toggle source</span>
+                            </div>
+
+                            <div class="method-description">
+                              <p>Get yydebug.</p>
+
+                              <div class="method-source-code" id="yydebug-source">
+            <pre>VALUE
+rb_parser_get_yydebug(VALUE self)
+{
+    struct parser_params *p;
+
+    TypedData_Get_Struct(self, struct parser_params, &amp;parser_data_type, p);
+    return RBOOL(p-&gt;debug);
+}</pre>
+                              </div>
+                            </div>
+
+                            <div class="aliases">
+                              Also aliased as: yydebug
+                            </div>
+
+                          </div>
+
+                  <div id="method-i-yydebug-3D" class="method-detail ">
+                      <div class="method-heading">
+                        <span class="method-callseq">
+                          yydebug = flag
+                              </span>
+                              <span class="method-click-advice">click to toggle source</span>
+                            </div>
+
+                            <div class="method-description">
+                              <p>Set yydebug.</p>
+
+                              <div class="method-source-code" id="yydebug-3D-source">
+            <pre>VALUE
+rb_parser_set_yydebug(VALUE self, VALUE flag)
+{
+    struct parser_params *p;
+
+    TypedData_Get_Struct(self, struct parser_params, &amp;parser_data_type, p);
+    p-&gt;debug = RTEST(flag);
+    return flag;
+}</pre>
+                              </div>
+                            </div>
+
+                            <div class="aliases">
+                              Also aliased as: yydebug=
+                            </div>
+
+                          </div>
+
+                          </section>
+
+                <section id="private-instance-5Buntitled-5D-method-details" class="method-section">
+                <header>
+                <h3>Private Instance Methods</h3>
+                </header>
+
+                  <div id="method-i-dedent_string" class="method-detail ">
+                      <div class="method-heading">
+                        <span class="method-callseq">
+                          dedent_string(input, width)   &rarr; Integer
+                              </span>
+                              <span class="method-click-advice">click to toggle source</span>
+                            </div>
+
+                            <div class="method-description">
+                              <p>USE OF RIPPER LIBRARY ONLY.</p>
+
+<p>Strips up to <code>width</code> leading whitespaces from <code>input</code>, and returns the stripped column width.</p>
+
+                              <div class="method-source-code" id="dedent_string-source">
+            <pre>static VALUE
+parser_dedent_string(VALUE self, VALUE input, VALUE width)
+{
+    int wid, col;
+
+    StringValue(input);
+    wid = NUM2UINT(width);
+    col = dedent_string(input, wid);
+    return INT2NUM(col);
+}</pre>
+                              </div>
+                            </div>
+
+                            <div class="aliases">
+                              Also aliased as: dedent_string, dedent_string, dedent_string
+                            </div>
+
+                          </div>
+
+                          </section>
+
+              </section>
+              </main>
+
+
+
+            </div>  <!--  class='wrapper hdiv' -->
+
+
+<footer id="validator-badges" role="contentinfo">
+<p><a href="https://validator.w3.org/check/referer">Validate</a></p>
+<p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.4.0.</p>
+<p>Based on <a href="https://github.com/ged/darkfish/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.</p>
+
+  
+    <p><p><a href="https://ruby-doc.org">Ruby-doc.org</a> is provided by <a href="https://jamesbritt.com">James Britt</a> and <a href="https://neurogami.com">Neurogami</a>. </p><p><a href="https://jamesbritt.bandcamp.com/">Hack your world.  Feed your head.  Live curious</a>.</p>
+</p>
+  
+  </footer>
+
+<script type="text/javascript">
+
+
+  let ads  = $("#carbonads-container").children().detach();
+
+
+  function swapMode() {
+    var cookieName = 'darkmode';
+    var cssDarkmode = Cookies.get(cookieName);
+    console.log("***** swapMode! " + cssDarkmode + " *****");
+
+
+    if (cssDarkmode == "true") {
+      console.log("We have dark mode, set the css to light ...");
+      $('#rdoccss').attr("href", defaultModeCssHref);
+      $('#cssSelect').text("Dark mode");
+      cssDarkmode = "false";
+      console.log("swapMode! Now set cookie to " + cssDarkmode);
+      Cookies.set(cookieName, cssDarkmode);
+
+    } else {
+      console.log("We not have dark mode, set the css to dark ...");
+      $('#rdoccss').attr("href", darkModeCsseHref);
+      $('#cssSelect').text("Light mode");
+      cssDarkmode = "true";
+      console.log("swapMode! Now set cookie to " + cssDarkmode);
+      Cookies.set(cookieName, cssDarkmode);
+
+    }
+
+    console.log("  --------------- ");
+  }
+
+
+const vueCssApp = new Vue({
+el: '#menubar',
+data: {
+isDark: false
+},
+methods: {
+toggleClass: function(event){
+this.isDark = !this.isDark;
+}
+}
+})
+
+const vueApp = new Vue({
+el: '#vapp',
+data: { 
+isOpen: true
+},
+
+mounted() {
+this.handleResize();
+this.manage_mob_classes();
+window.addEventListener('resize', this.handleResize)
+//this.isOpen !=  (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+},
+destroyed() {
+window.removeEventListener('resize', this.handleResize)
+},
+created() {
+//manage_mob_classes();
+},
+
+methods : {
+isMobile() {
+  return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+},
+
+  handleResize() {
+    if (!this.isMobile()) {
+      this.isOpen = window.innerWidth > 800;
+    }
+  },
+
+  manage_mob_classes() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      $("nav").addClass("mob_nav");
+      $("main").addClass("mob_main");
+      $("#extraz").addClass("mob_extraz");
+      $("#carbonads-container").addClass("mob_carbonads-container");
+      this.isOpen  = false;
+    } else {
+      $("nav").removeClass("mob_nav") 
+        $("main").removeClass("mob_main");
+      $("#extraz").removeClass("mob_extraz");
+      $("#carbonads-container").removeClass("mob_carbonads-container");
+      this.isOpen  = true;
+    }
+  },
+
+  toggleNav() {
+    this.isOpen =! this.isOpen ;
+    // alert("Toggle nav!");
+    console.log("toggleNav() click: " + this.isOpen );
+  }
+}
+})
+
+$("#carbonads-container").append(ads);
+
+
+$(function() {
+
+    var darkmode = Cookies.get("darkmode");
+    console.log("Document ready: " + darkmode);
+
+    if ( darkmode  == "true" ) {
+      $('#cssSelect').text("Light mode");
+    } else {
+      $('#cssSelect').text("Dark mode");
+     }
+
+    $('body').css('display','block');
+    });
+
+</script>
+
+    
+  </body> 
+</html>
+

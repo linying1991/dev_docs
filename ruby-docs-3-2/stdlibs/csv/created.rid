@@ -1,0 +1,13 @@
+Sat, 27 Jul 2024 16:09:25 -0400
+csv.rb	Fri, 26 Jul 2024 07:54:27 -0400
+csv/core_ext/array.rb	Fri, 26 Jul 2024 07:54:27 -0400
+csv/core_ext/string.rb	Fri, 26 Jul 2024 07:54:27 -0400
+csv/delete_suffix.rb	Fri, 26 Jul 2024 07:54:27 -0400
+csv/fields_converter.rb	Fri, 26 Jul 2024 07:54:27 -0400
+csv/input_record_separator.rb	Fri, 26 Jul 2024 07:54:27 -0400
+csv/match_p.rb	Fri, 26 Jul 2024 07:54:27 -0400
+csv/parser.rb	Fri, 26 Jul 2024 07:54:27 -0400
+csv/row.rb	Fri, 26 Jul 2024 07:54:27 -0400
+csv/table.rb	Fri, 26 Jul 2024 07:54:27 -0400
+csv/version.rb	Fri, 26 Jul 2024 07:54:27 -0400
+csv/writer.rb	Fri, 26 Jul 2024 07:54:27 -0400

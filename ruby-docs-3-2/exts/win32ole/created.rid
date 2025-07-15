@@ -1,0 +1,14 @@
+Sat, 27 Jul 2024 16:28:14 -0400
+win32ole/lib/win32ole/property.rb	Fri, 26 Jul 2024 07:54:27 -0400
+win32ole/lib/win32ole.rb	Fri, 26 Jul 2024 07:54:27 -0400
+win32ole/win32ole.c	Fri, 26 Jul 2024 07:54:27 -0400
+win32ole/win32ole_error.c	Fri, 26 Jul 2024 07:54:27 -0400
+win32ole/win32ole_event.c	Fri, 26 Jul 2024 07:54:27 -0400
+win32ole/win32ole_method.c	Fri, 26 Jul 2024 07:54:27 -0400
+win32ole/win32ole_param.c	Fri, 26 Jul 2024 07:54:27 -0400
+win32ole/win32ole_record.c	Fri, 26 Jul 2024 07:54:27 -0400
+win32ole/win32ole_type.c	Fri, 26 Jul 2024 07:54:27 -0400
+win32ole/win32ole_typelib.c	Fri, 26 Jul 2024 07:54:27 -0400
+win32ole/win32ole_variable.c	Fri, 26 Jul 2024 07:54:27 -0400
+win32ole/win32ole_variant.c	Fri, 26 Jul 2024 07:54:27 -0400
+win32ole/win32ole_variant_m.c	Fri, 26 Jul 2024 07:54:27 -0400

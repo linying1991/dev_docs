@@ -1,0 +1,22 @@
+Sat, 27 Jul 2024 16:14:06 -0400
+json/generator/generator.c	Fri, 26 Jul 2024 07:54:27 -0400
+json/lib/json/add/bigdecimal.rb	Fri, 26 Jul 2024 07:54:27 -0400
+json/lib/json/add/complex.rb	Fri, 26 Jul 2024 07:54:27 -0400
+json/lib/json/add/core.rb	Fri, 26 Jul 2024 07:54:27 -0400
+json/lib/json/add/date.rb	Fri, 26 Jul 2024 07:54:27 -0400
+json/lib/json/add/date_time.rb	Fri, 26 Jul 2024 07:54:27 -0400
+json/lib/json/add/exception.rb	Fri, 26 Jul 2024 07:54:27 -0400
+json/lib/json/add/ostruct.rb	Fri, 26 Jul 2024 07:54:27 -0400
+json/lib/json/add/range.rb	Fri, 26 Jul 2024 07:54:27 -0400
+json/lib/json/add/rational.rb	Fri, 26 Jul 2024 07:54:27 -0400
+json/lib/json/add/regexp.rb	Fri, 26 Jul 2024 07:54:27 -0400
+json/lib/json/add/set.rb	Fri, 26 Jul 2024 07:54:27 -0400
+json/lib/json/add/struct.rb	Fri, 26 Jul 2024 07:54:27 -0400
+json/lib/json/add/symbol.rb	Fri, 26 Jul 2024 07:54:27 -0400
+json/lib/json/add/time.rb	Fri, 26 Jul 2024 07:54:27 -0400
+json/lib/json/common.rb	Fri, 26 Jul 2024 07:54:27 -0400
+json/lib/json/ext.rb	Fri, 26 Jul 2024 07:54:27 -0400
+json/lib/json/generic_object.rb	Fri, 26 Jul 2024 07:54:27 -0400
+json/lib/json/version.rb	Fri, 26 Jul 2024 07:54:27 -0400
+json/lib/json.rb	Fri, 26 Jul 2024 07:54:27 -0400
+json/parser/parser.c	Fri, 26 Jul 2024 07:54:27 -0400

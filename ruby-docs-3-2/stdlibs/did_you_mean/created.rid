@@ -1,0 +1,21 @@
+Sat, 27 Jul 2024 16:10:12 -0400
+did_you_mean.rb	Fri, 26 Jul 2024 07:54:27 -0400
+did_you_mean/core_ext/name_error.rb	Fri, 26 Jul 2024 07:54:27 -0400
+did_you_mean/experimental.rb	Fri, 26 Jul 2024 07:54:27 -0400
+did_you_mean/formatter.rb	Fri, 26 Jul 2024 07:54:27 -0400
+did_you_mean/formatters/plain_formatter.rb	Fri, 26 Jul 2024 07:54:27 -0400
+did_you_mean/formatters/verbose_formatter.rb	Fri, 26 Jul 2024 07:54:27 -0400
+did_you_mean/jaro_winkler.rb	Fri, 26 Jul 2024 07:54:27 -0400
+did_you_mean/levenshtein.rb	Fri, 26 Jul 2024 07:54:27 -0400
+did_you_mean/spell_checker.rb	Fri, 26 Jul 2024 07:54:27 -0400
+did_you_mean/spell_checkers/key_error_checker.rb	Fri, 26 Jul 2024 07:54:27 -0400
+did_you_mean/spell_checkers/method_name_checker.rb	Fri, 26 Jul 2024 07:54:27 -0400
+did_you_mean/spell_checkers/name_error_checkers/class_name_checker.rb	Fri, 26 Jul 2024 07:54:27 -0400
+did_you_mean/spell_checkers/name_error_checkers/variable_name_checker.rb	Fri, 26 Jul 2024 07:54:27 -0400
+did_you_mean/spell_checkers/name_error_checkers.rb	Fri, 26 Jul 2024 07:54:27 -0400
+did_you_mean/spell_checkers/null_checker.rb	Fri, 26 Jul 2024 07:54:27 -0400
+did_you_mean/spell_checkers/pattern_key_name_checker.rb	Fri, 26 Jul 2024 07:54:27 -0400
+did_you_mean/spell_checkers/require_path_checker.rb	Fri, 26 Jul 2024 07:54:27 -0400
+did_you_mean/tree_spell_checker.rb	Fri, 26 Jul 2024 07:54:27 -0400
+did_you_mean/verbose.rb	Fri, 26 Jul 2024 07:54:27 -0400
+did_you_mean/version.rb	Fri, 26 Jul 2024 07:54:27 -0400

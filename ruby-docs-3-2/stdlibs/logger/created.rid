@@ -1,0 +1,8 @@
+Sat, 27 Jul 2024 16:14:18 -0400
+logger.rb	Fri, 26 Jul 2024 07:54:27 -0400
+logger/errors.rb	Fri, 26 Jul 2024 07:54:27 -0400
+logger/formatter.rb	Fri, 26 Jul 2024 07:54:27 -0400
+logger/log_device.rb	Fri, 26 Jul 2024 07:54:27 -0400
+logger/period.rb	Fri, 26 Jul 2024 07:54:27 -0400
+logger/severity.rb	Fri, 26 Jul 2024 07:54:27 -0400
+logger/version.rb	Fri, 26 Jul 2024 07:54:27 -0400

@@ -1,0 +1,20 @@
+Sat, 27 Jul 2024 16:15:51 -0400
+net-imap-0.3.4.1/lib/net/imap/authenticators/cram_md5.rb	Fri, 26 Jul 2024 07:54:29 -0400
+net-imap-0.3.4.1/lib/net/imap/authenticators/digest_md5.rb	Fri, 26 Jul 2024 07:54:29 -0400
+net-imap-0.3.4.1/lib/net/imap/authenticators/login.rb	Fri, 26 Jul 2024 07:54:29 -0400
+net-imap-0.3.4.1/lib/net/imap/authenticators/plain.rb	Fri, 26 Jul 2024 07:54:29 -0400
+net-imap-0.3.4.1/lib/net/imap/authenticators/xoauth2.rb	Fri, 26 Jul 2024 07:54:29 -0400
+net-imap-0.3.4.1/lib/net/imap/authenticators.rb	Fri, 26 Jul 2024 07:54:29 -0400
+net-imap-0.3.4.1/lib/net/imap/command_data.rb	Fri, 26 Jul 2024 07:54:29 -0400
+net-imap-0.3.4.1/lib/net/imap/data_encoding.rb	Fri, 26 Jul 2024 07:54:29 -0400
+net-imap-0.3.4.1/lib/net/imap/errors.rb	Fri, 26 Jul 2024 07:54:29 -0400
+net-imap-0.3.4.1/lib/net/imap/flags.rb	Fri, 26 Jul 2024 07:54:29 -0400
+net-imap-0.3.4.1/lib/net/imap/response_data.rb	Fri, 26 Jul 2024 07:54:29 -0400
+net-imap-0.3.4.1/lib/net/imap/response_parser.rb	Fri, 26 Jul 2024 07:54:29 -0400
+net-imap-0.3.4.1/lib/net/imap/sasl/saslprep.rb	Fri, 26 Jul 2024 07:54:29 -0400
+net-imap-0.3.4.1/lib/net/imap/sasl/saslprep_tables.rb	Fri, 26 Jul 2024 07:54:29 -0400
+net-imap-0.3.4.1/lib/net/imap/sasl/stringprep.rb	Fri, 26 Jul 2024 07:54:29 -0400
+net-imap-0.3.4.1/lib/net/imap/sasl/stringprep_tables.rb	Fri, 26 Jul 2024 07:54:29 -0400
+net-imap-0.3.4.1/lib/net/imap/sasl.rb	Fri, 26 Jul 2024 07:54:29 -0400
+net-imap-0.3.4.1/lib/net/imap.rb	Fri, 26 Jul 2024 07:54:29 -0400
+net-imap-0.3.4.1/rakelib/string_prep_tables_generator.rb	Fri, 26 Jul 2024 07:54:29 -0400
